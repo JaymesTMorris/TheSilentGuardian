@@ -1,9 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731109969
-::res://Scenes/::1731109793
-Main.tscn::PackedScene::4095894361184615857::1731109793::0::1::::<><>::
+::res://::1731122002
+::res://Scenes/::1731121974
+player.gd::GDScript::-1::1731121974::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::3148001201704119904::1731121729::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png
+::res://Scenes/Levels/::1731121729
+Main.tscn::PackedScene::4095894361184615857::1731121729::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn
+::res://Scripts/::1731122019
+::res://Scripts/Entities/::1731122027
+::res://Scripts/Entities/Player/::1731122027
 ::res://Sprites/::1731109417
-::res://Sprites/Entities/::1731109380
+::res://Sprites/Entities/::1731119287
 ::res://Sprites/Entities/Enemies/::1731101363
 ::res://Sprites/Entities/Enemies/Bat/::1731109381
 bat-sheet.png::CompressedTexture2D::5502454205105015071::1731101363::1731109381::1::::<><>::
@@ -28,11 +34,12 @@ dog.png::CompressedTexture2D::538400567058864187::1731101363::1731109381::1::::<
 fox-sheet.png::CompressedTexture2D::2504777956274223901::1731101363::1731109381::1::::<><>::
 ::res://Sprites/Entities/FriendSpirits/Owl/::1731109381
 owl-sheet.png::CompressedTexture2D::1276102309969009662::1731101363::1731109381::1::::<><>::
-::res://Sprites/Entities/GhostSheets/::1731109381
-ghost.png::CompressedTexture2D::9087240204906805251::1731101363::1731109381::1::::<><>::
-ghost_dead.png::CompressedTexture2D::8193364719593598655::1731101363::1731109381::1::::<><>::
-ghost_hit.png::CompressedTexture2D::622115699134468209::1731101363::1731109381::1::::<><>::
-ghost_normal.png::CompressedTexture2D::5536995561472175173::1731101363::1731109381::1::::<><>::
+::res://Sprites/Entities/Player/::1731120141
+ghost.png::CompressedTexture2D::9087240204906805251::1731101363::1731119287::1::::<><>::
+ghost_dead.png::CompressedTexture2D::8193364719593598655::1731101363::1731119287::1::::<><>::
+ghost_hit.png::CompressedTexture2D::622115699134468209::1731101363::1731119287::1::::<><>::
+ghost_normal-Sheet.png::CompressedTexture2D::6037847729108658170::1731120141::1731120141::1::::<><>::
+ghost_normal.png::CompressedTexture2D::5536995561472175173::1731101363::1731119287::1::::<><>::
 ::res://Sprites/Environment/::1731109695
 ::res://Sprites/Environment/Outdoor decoration/::1731109695
 Bridge_Wood.png::CompressedTexture2D::6194679777989119818::1731109677::1731109695::1::::<><>::

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2p6rvnu18xfv"
-path="res://.godot/imported/ghost.png-7656ea4757bcb09f3de98991ea4b17be.ctex"
+uid="uid://i4mfi2io1qu0"
+path="res://.godot/imported/ghost_hit.png-ceddfbb632f8b90be522b324448922ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Entities/GhostSheets/ghost.png"
-dest_files=["res://.godot/imported/ghost.png-7656ea4757bcb09f3de98991ea4b17be.ctex"]
+source_file="res://Sprites/Entities/Player/ghost_hit.png"
+dest_files=["res://.godot/imported/ghost_hit.png-ceddfbb632f8b90be522b324448922ba.ctex"]
 
 [params]
 

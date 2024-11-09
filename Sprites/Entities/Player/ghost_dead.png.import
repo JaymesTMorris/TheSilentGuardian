@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doy6rw723qool"
-path="res://.godot/imported/ghost_dead.png-f078b330e0c1c4937a43589d0f022c94.ctex"
+path="res://.godot/imported/ghost_dead.png-14b906e9c0eebb622dc112626c6794b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Entities/GhostSheets/ghost_dead.png"
-dest_files=["res://.godot/imported/ghost_dead.png-f078b330e0c1c4937a43589d0f022c94.ctex"]
+source_file="res://Sprites/Entities/Player/ghost_dead.png"
+dest_files=["res://.godot/imported/ghost_dead.png-14b906e9c0eebb622dc112626c6794b0.ctex"]
 
 [params]
 

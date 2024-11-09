@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i4mfi2io1qu0"
-path="res://.godot/imported/ghost_hit.png-297d1840c315b87de4a83e34f1bfa363.ctex"
+uid="uid://csa1p8jhtdscg"
+path="res://.godot/imported/ghost_normal-Sheet.png-ce7928d6c0d9cf9ed61d3ccf171bcbe9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Entities/GhostSheets/ghost_hit.png"
-dest_files=["res://.godot/imported/ghost_hit.png-297d1840c315b87de4a83e34f1bfa363.ctex"]
+source_file="res://Sprites/Entities/Player/ghost_normal-Sheet.png"
+dest_files=["res://.godot/imported/ghost_normal-Sheet.png-ce7928d6c0d9cf9ed61d3ccf171bcbe9.ctex"]
 
 [params]
 

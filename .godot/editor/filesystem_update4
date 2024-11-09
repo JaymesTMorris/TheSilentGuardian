@@ -1,1 +1,3 @@
-res://Scenes/Main.tscn
+res://Scenes/Levels/Main.tscn
+res://Scenes/Player.tscn
+res://Scripts/Entities/Player/player.gd

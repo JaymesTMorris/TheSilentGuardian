@@ -1,4 +1,8 @@
+Camera2D
+AnimationPlayer
+Sprite2D
+AnimatedSprite2D
+CharacterBody2D
 Node2D
 TileMapLayer
 TileMap
-AnimatedSprite2D
