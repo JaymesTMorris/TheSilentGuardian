@@ -6,7 +6,7 @@ class_name Spirit
 @export var health: int = 100
 @export var speed: float = 10.0
 @export var attack: Attack
-@onready var sprite: Sprite2D = $sprite2D
+@onready var sprite: Sprite2D = $Sprite2D
 
 func initialize(spirit_name: String, health: int, speed: float, attack: Attack, sprite: Sprite2D) -> void:
 	self.spiritName = spirit_name
