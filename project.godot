@@ -30,6 +30,13 @@ UIManager="*res://Scripts/Singletons (Autoloads)/UIManager.gd"
 
 gdscript/warnings/untyped_declaration=2
 
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="viewport"
+
 [rendering]
 
 renderer/rendering_method="mobile"
