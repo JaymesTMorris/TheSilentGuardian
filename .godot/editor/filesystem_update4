@@ -1,15 +1,2 @@
 res://Scenes/Levels/Main.tscn
-res://Scripts/Utility Classes/Attack.gd
-res://Scripts/Utility Classes/Spirit.gd
 res://Scenes/Player.tscn
-res://Scripts/Utility Classes/DefenseUnit.gd
-res://Scripts/Utility Classes/Projectile.gd
-res://Scripts/Singletons (Autoloads)/AudioManager.gd
-res://Scripts/Singletons (Autoloads)/CurrencyManager.gd
-res://Scripts/Singletons (Autoloads)/EnergyManager.gd
-res://Scripts/Singletons (Autoloads)/GameStateManager.gd
-res://Scripts/Singletons (Autoloads)/LevelManager.gd
-res://Scripts/Singletons (Autoloads)/NotificationManager.gd
-res://Scripts/Singletons (Autoloads)/ScoreManager.gd
-res://Scripts/Singletons (Autoloads)/SpawnManager.gd
-res://Scripts/Singletons (Autoloads)/UIManager.gd
