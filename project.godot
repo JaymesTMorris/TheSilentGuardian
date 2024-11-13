@@ -14,9 +14,28 @@ config/name="TheSilentGuardian"
 run/main_scene="res://Scenes/Levels/Main.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 
+[autoload]
+
+AudioManager="*res://Scripts/Singletons (Autoloads)/AudioManager.gd"
+CurrencyManager="*res://Scripts/Singletons (Autoloads)/CurrencyManager.gd"
+EnergyManager="*res://Scripts/Singletons (Autoloads)/EnergyManager.gd"
+GameStateManager="*res://Scripts/Singletons (Autoloads)/GameStateManager.gd"
+LevelManager="*res://Scripts/Singletons (Autoloads)/LevelManager.gd"
+NotificationManager="*res://Scripts/Singletons (Autoloads)/NotificationManager.gd"
+ScoreManager="*res://Scripts/Singletons (Autoloads)/ScoreManager.gd"
+SpawnManager="*res://Scripts/Singletons (Autoloads)/SpawnManager.gd"
+UIManager="*res://Scripts/Singletons (Autoloads)/UIManager.gd"
+
 [debug]
 
 gdscript/warnings/untyped_declaration=2
+
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="viewport"
 
 [rendering]
 

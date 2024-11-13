@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 TileMapLayer
 TileMap
 Camera2D
+=======
+>>>>>>> 4c4d2d02258ff86f90edd13fbac4a35a3ca23cf6
 AnimationPlayer
 Sprite2D
+TileMapLayer
+TileMap
+Camera2D
 AnimatedSprite2D
 CharacterBody2D
 Node2D
