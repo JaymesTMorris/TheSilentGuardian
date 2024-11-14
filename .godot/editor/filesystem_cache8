@@ -1,14 +1,33 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731539891
-Level1.tscn::PackedScene::659408508119532867::1731454151::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png
-::res://Scenes/::1731453028
-Player.tscn::PackedScene::3148001201704119904::1731453028::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd
-::res://Scenes/Levels/::1731453028
-Main.tscn::PackedScene::4095894361184615857::1731453028::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn
-::res://Scripts/::1731451766
-::res://Scripts/Entities/::1731451766
-::res://Scripts/Entities/Player/::1731451766
-player.gd::GDScript::-1::1731451766::0::1::::<>CharacterBody2D<>::
+::res://::1731541436
+Level1.tscn::PackedScene::659408508119532867::1731541436::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png
+::res://Scenes/::1731541435
+BunnySpirit.tscn::PackedScene::-1::1731539919::0::1::::<><>::
+Player.tscn::PackedScene::3148001201704119904::1731541435::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd
+::res://Scenes/Levels/::1731541435
+GridSelector.gd::GDScript::-1::1731539919::0::1::::<>TileMapLayer<>::
+Main.tscn::PackedScene::4095894361184615857::1731541435::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>res://Scenes/BunnySpirit.tscn<>res://Scenes/Levels/GridSelector.gd
+::res://Scripts/::1731540720
+::res://Scripts/Entities/::1731540720
+::res://Scripts/Entities/Enemies/::1731539919
+BunnySpirit.gd::GDScript::-1::1731539919::0::1::::<>Spirit<>::
+::res://Scripts/Entities/Player/::1731539919
+player.gd::GDScript::-1::1731539919::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Singletons (Autoloads)/::1731539919
+AudioManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+CurrencyManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+EnergyManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+GameStateManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+LevelManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+NotificationManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+ScoreManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+SpawnManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+UIManager.gd::GDScript::-1::1731539919::0::1::::<>Node<>::
+::res://Scripts/Utility Classes/::1731539919
+Attack.gd::GDScript::-1::1731539919::0::1::::Attack<>Resource<>::
+DefenseUnit.gd::GDScript::-1::1731539919::0::1::::DefenseUnit<>Node2D<>::
+Projectile.gd::GDScript::-1::1731539919::0::1::::Projectile<>Node2D<>::
+Spirit.gd::GDScript::-1::1731539919::0::1::::Spirit<>Node2D<>::
 ::res://Sprites/::1731451766
 ::res://Sprites/Entities/::1731451766
 ::res://Sprites/Entities/Enemies/::1731451766
@@ -59,7 +78,8 @@ Path_Middle.png::CompressedTexture2D::6927194171280553384::1731451766::173145187
 Path_Tile.png::CompressedTexture2D::5561655317295263887::1731451766::1731451877::1::::<><>::
 Water_Middle.png::CompressedTexture2D::5389557498981804086::1731451766::1731451877::1::::<><>::
 Water_Tile.png::CompressedTexture2D::2969036623166501677::1731451766::1731451877::1::::<><>::
-::res://Sprites/UI/::1731451766
+::res://Sprites/UI/::1731540378
+TileOutline.png::CompressedTexture2D::8602296948872418279::1731539919::1731540378::1::::<><>::
 ::res://Sprites/UI/KenneyUIPackAdventure/::1731451877
 banner_classic_curtain.png::CompressedTexture2D::1137664893135611751::1731451766::1731451877::1::::<><>::
 banner_hanging.png::CompressedTexture2D::5581871344669745400::1731451766::1731451877::1::::<><>::
