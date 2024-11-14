@@ -1,9 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://jnomkhyipkv0"]
+[gd_scene load_steps=14 format=4 uid="uid://jnomkhyipkv0"]
 
 [ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="1_pocqt"]
 [ext_resource type="PackedScene" uid="uid://bk36ectdxpwd1" path="res://Scenes/Player.tscn" id="2_cka2h"]
 [ext_resource type="Texture2D" uid="uid://crbg1aytndras" path="res://Sprites/Environment/Outdoor decoration/House.png" id="2_ugour"]
 [ext_resource type="Texture2D" uid="uid://c603de7wv2ngn" path="res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png" id="3_bud4a"]
+[ext_resource type="PackedScene" uid="uid://dpe8gj2d3j7dj" path="res://Scenes/BunnySpirit.tscn" id="4_ixmst"]
+[ext_resource type="Script" path="res://Scripts/Utility Classes/Attack.gd" id="5_ydg4d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mp482"]
 texture = ExtResource("1_pocqt")
@@ -116,6 +118,14 @@ texture = ExtResource("3_bud4a")
 [sub_resource type="TileSet" id="TileSet_6gih6"]
 sources/0 = SubResource("TileSetAtlasSource_mpv3p")
 
+[sub_resource type="Resource" id="Resource_jyeyt"]
+script = ExtResource("5_ydg4d")
+name = "Unnamed Attack"
+damage = 10
+knockback = 5.0
+stunDuration = 1.0
+range = 50.0
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -134,6 +144,10 @@ tile_set = SubResource("TileSet_1iiq2")
 [node name="TileMapLayer2" type="TileMapLayer" parent="TileMap"]
 tile_map_data = PackedByteArray("AAAfABgAAAAEAAQAAAAfABkAAAAEAAUAAAAfABoAAAAEAAYAAAAnAAsAAAAEAAQAAAAnAAwAAAAEAAUAAAAnAA0AAAAEAAYAAAAqAAYAAAAEAAQAAAAqAAcAAAAEAAUAAAAqAAgAAAAEAAYAAAAwAAYAAAAEAAQAAAAwAAcAAAAEAAUAAAAwAAgAAAAEAAYAAAAgAP//AAAEAAQAAAAgAAAAAAAEAAUAAAAgAAEAAAAEAAYAAAAwACAAAAAEAAQAAAAwACEAAAAEAAUAAAAwACIAAAAEAAYAAAAlACQAAAAEAAQAAAAlACUAAAAEAAUAAAAlACYAAAAEAAYAAAAsABQAAAAEAAQAAAAsABUAAAAEAAUAAAAsABYAAAAEAAYAAAAqAA0AAAAGAAEAAAAqAA4AAAAGAAEAAAArAA4AAAAGAAEAAAArAA8AAAAGAAEAAAArABAAAAAGAAEAAAArABEAAAAGAAEAAAAqABEAAAAGAAEAAAApABEAAAAGAAEAAAApABAAAAAGAAEAAAApAA8AAAAGAAEAAAApAA4AAAAGAAEAAAAqAA8AAAAGAAEAAAAqABAAAAAGAAEAAAArAA0AAAAGAAEAAAAsAA4AAAAGAAEAAAAsAA8AAAAGAAEAAAAsABAAAAAGAAEAAAAsABEAAAAGAAEAAAAnAAAAAAAGAAIAAAAoAAAAAAAGAAIAAAAoAAEAAAAGAAIAAAApAAEAAAAGAAIAAAApAAIAAAAGAAIAAAAoAAIAAAAGAAIAAAAnAAEAAAAGAAIAAAAmAAEAAAAGAAIAAAAqAAEAAAAGAAIAAAAqAAAAAAAGAAIAAAApAAAAAAAGAAIAAAArAAEAAAAGAAIAAAArAAAAAAAGAAIAAAA=")
 tile_set = SubResource("TileSet_6gih6")
+
+[node name="BunnySpirit" parent="." instance=ExtResource("4_ixmst")]
+position = Vector2(136, 288)
+attack = SubResource("Resource_jyeyt")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_cka2h")]
 position = Vector2(258, 292)
