@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmjum23kj3rec"]
+
+[ext_resource type="Script" path="res://Scenes/Tower.gd" id="1_hbr54"]
+[ext_resource type="Texture2D" uid="uid://vf1c36m3pbhe" path="res://Sprites/Tower/red.png" id="1_wlfaw"]
+
+[node name="Tower" type="Node2D"]
+script = ExtResource("1_hbr54")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wlfaw")
+offset = Vector2(8, 8)

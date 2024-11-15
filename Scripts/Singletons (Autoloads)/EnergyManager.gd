@@ -10,6 +10,7 @@ func useEnergy(amount: int) -> bool:
 	if currentEnergy >= amount:
 		currentEnergy -= amount
 		incrementEnergyUsed(amount)
+		UIManager.updateManaBar(currentEnergy)
 		return true
 	return false
 

@@ -3,6 +3,20 @@
 [ext_resource type="Script" path="res://Scripts/Entities/Enemies/BunnySpirit.gd" id="1_dbjvm"]
 [ext_resource type="Texture2D" uid="uid://dd0k1stfa1cbi" path="res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png" id="2_sm28r"]
 
+[sub_resource type="Animation" id="Animation_5j6np"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_2pwxu"]
 resource_name = "movement"
@@ -22,21 +36,6 @@ tracks/0/keys = {
 "values": [0, 1, 2]
 }
 
-[sub_resource type="Animation" id="Animation_5j6np"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3anki"]
 _data = {
 "RESET": SubResource("Animation_5j6np"),
@@ -45,6 +44,8 @@ _data = {
 
 [node name="BunnySpirit" type="Node2D"]
 script = ExtResource("1_dbjvm")
+spiritName = "Bunny Spirit"
+speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_sm28r")
