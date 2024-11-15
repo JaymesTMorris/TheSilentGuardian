@@ -24,4 +24,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_interact"): # Keyboard [E]
 		if EnergyManager.useEnergy(25):
 			SpawnManager.spawnTower()
+			
+	if event.is_action_pressed("ui_accept"): # Keyboard [Space]
+		SpawnManager.spawnSpirit()
 		
