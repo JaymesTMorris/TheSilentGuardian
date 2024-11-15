@@ -15,8 +15,8 @@ func _process(delta: float) -> void:
 	# If the hovered cell changes, update the highlight
 	if cell_position != highlighted_cell:
 		# Clear the previous highlight
-		if highlighted_cell != Vector2i(-1, -1):
-			set_cell(highlighted_cell, 0, Vector2i(-1, 0))  # Clear by setting tile ID to -1 wrapped in Vector2i
+		#if highlighted_cell != Vector2i(-1, -1):
+		set_cell(highlighted_cell, 0, Vector2i(-1, 0))  # Clear by setting tile ID to -1 wrapped in Vector2i
 
 		# Highlight the new cell
 		highlighted_cell = cell_position

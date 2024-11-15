@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+[gd_scene load_steps=8 format=3 uid="uid://bk36ectdxpwd1"]
+=======
 [gd_scene load_steps=7 format=3 uid="uid://bk36ectdxpwd1"]
+>>>>>>> main
 
 [ext_resource type="Texture2D" uid="uid://csa1p8jhtdscg" path="res://Sprites/Entities/Player/ghost_normal-Sheet.png" id="1_klkb5"]
 [ext_resource type="Script" path="res://Scripts/Entities/Player/player.gd" id="1_we338"]
+[ext_resource type="PackedScene" uid="uid://dirnmu86rb8re" path="res://Scenes/UserInterface.tscn" id="3_isbsq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gsgu8"]
 size = Vector2(52, 70)
@@ -45,7 +50,11 @@ _data = {
 "idle": SubResource("Animation_ew6ff")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cex3e"]
+size = Vector2(52, 74)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 10
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_we338")
 
@@ -65,7 +74,16 @@ libraries = {
 autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+<<<<<<< HEAD
+
+[node name="UserInterface" parent="Camera2D" instance=ExtResource("3_isbsq")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_cex3e")
+=======
 limit_left = -320
 limit_top = 0
 limit_right = 864
 limit_bottom = 700
+>>>>>>> main
