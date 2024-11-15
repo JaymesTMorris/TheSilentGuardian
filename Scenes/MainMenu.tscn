@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://jtvvtrc86ubw"]
+
+[ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="1_02ax6"]
+[ext_resource type="Texture2D" uid="uid://ci10hvvbyny11" path="res://Sprites/Environment/Tiles/Water_Middle.png" id="1_y588q"]
+[ext_resource type="Texture2D" uid="uid://crbg1aytndras" path="res://Sprites/Environment/Outdoor decoration/House.png" id="6_ccr8s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvkto"]
+atlas = ExtResource("6_ccr8s")
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="BG" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1145, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/BG"]
+position = Vector2(574, 192)
+scale = Vector2(71.625, 23.9375)
+texture = ExtResource("1_y588q")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BG"]
+position = Vector2(574, 459.5)
+scale = Vector2(71.625, 23.9375)
+texture = ExtResource("1_02ax6")
+
+[node name="FG" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(40, 71)
+motion_mirroring = Vector2(1145, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(23, 252)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(96, 162)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(178, 281)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(267, 167)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(369, 270)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(568, 278)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(476, 169)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(677, 178)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(767, 282)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(863, 175)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(952, 290)
+texture = SubResource("AtlasTexture_jvkto")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/FG"]
+position = Vector2(1050, 170)
+texture = SubResource("AtlasTexture_jvkto")

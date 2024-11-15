@@ -8,16 +8,17 @@ func _physics_process(delta: float) -> void:
 		Input.get_axis("ui_left", "ui_right"),
 		Input.get_axis("ui_up", "ui_down")
 	)
-	
+
 	# Normalize the direction to avoid faster diagonal movement
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
-	
+
 	# Set velocity based on direction and speed
 	velocity = direction * SPEED
-	
-	# Move the player
+
+	# Move the player with collision handling
 	move_and_slide()
+<<<<<<< HEAD
 	
 
 func _input(event: InputEvent) -> void:
@@ -28,3 +29,9 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"): # Keyboard [Space]
 		SpawnManager.spawnSpirit()
 		
+=======
+
+	# Explicitly check for collisions and stop if a collision is detected
+	if is_on_wall():
+		velocity = Vector2.ZERO
+>>>>>>> main

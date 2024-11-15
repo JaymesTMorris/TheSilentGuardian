@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 res://Scenes
 res://
 res://Sprites/Environment/Tiles
+=======
+res://Sprites/Environment/Tiles
+res://Sprites/Environment/Outdoor decoration
+res://
+res://Scenes
+>>>>>>> main
 res://Sprites/Entities/Enemies/Bunny
 res://Scripts/Singletons (Autoloads)
 res://Sprites/Entities/Player
