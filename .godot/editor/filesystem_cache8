@@ -1,71 +1,71 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731766000
-::res://Scenes/::1731765742
-BunnySpirit.tscn::PackedScene::8222367106784735767::1731765487::0::1::::<><>::res://Scripts/Entities/Enemies/BunnySpirit.gd<>uid://dd0k1stfa1cbi::::res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png
-MainMenu.tscn::PackedScene::672236352931065104::1731765742::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png
-Player.tscn::PackedScene::-1::1731765487::0::1::::<><>::
-Tower.tscn::PackedScene::3248503438370694782::1731765487::0::1::::<><>::res://Scripts/Tower.gd<>uid://vf1c36m3pbhe::::res://Sprites/Tower/red.png
-UserInterface.tscn::PackedScene::7756679075312243714::1731765487::0::1::::<><>::
-::res://Scenes/Levels/::1731765487
-Level1.tscn::PackedScene::-1::1731765487::0::1::::<><>::
-Main.tscn::PackedScene::4095894361184615857::1731765487::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://bk36ectdxpwd1::::res://Scenes/Player.tscn<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png
-::res://Scripts/::1731765487
-GridSelector.gd::GDScript::-1::1731765487::0::1::::<>TileMapLayer<>::
-Tower.gd::GDScript::-1::1731765487::0::1::::<>Node2D<>::
+::res://::1731769251
+::res://Scenes/::1731769233
+BunnySpirit.tscn::PackedScene::8222367106784735767::1731769233::0::1::::<><>::res://Scripts/Entities/Enemies/BunnySpirit.gd<>uid://dd0k1stfa1cbi::::res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png
+MainMenu.tscn::PackedScene::672236352931065104::1731769233::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png
+Player.tscn::PackedScene::5422480449546849871::1731769233::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd<>uid://dirnmu86rb8re::::res://Scenes/UserInterface.tscn
+Tower.tscn::PackedScene::3248503438370694782::1731769233::0::1::::<><>::res://Scripts/Tower.gd<>uid://vf1c36m3pbhe::::res://Sprites/Tower/red.png
+UserInterface.tscn::PackedScene::7756679075312243714::1731769233::0::1::::<><>::
+::res://Scenes/Levels/::1731769233
+Level1.tscn::PackedScene::-1::1731769233::0::1::::<><>::
+Main.tscn::PackedScene::4095894361184615857::1731769233::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://cjixpwwdf7064::::res://Scenes/Player.tscn<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>uid://dpe8gj2d3j7dj::::res://Scenes/BunnySpirit.tscn<>res://Scripts/GridSelector.gd
+::res://Scripts/::1731769233
+GridSelector.gd::GDScript::-1::1731769233::0::1::::<>TileMapLayer<>::
+Tower.gd::GDScript::-1::1731769233::0::1::::<>Node2D<>::
 ::res://Scripts/Entities/::1731616675
-::res://Scripts/Entities/Enemies/::1731765487
-BunnySpirit.gd::GDScript::-1::1731765487::0::1::::<>Spirit<>::
-::res://Scripts/Entities/Player/::1731765487
-player.gd::GDScript::-1::1731765487::0::1::::<>CharacterBody2D<>::
-::res://Scripts/Singletons (Autoloads)/::1731765487
+::res://Scripts/Entities/Enemies/::1731769233
+BunnySpirit.gd::GDScript::-1::1731769233::0::1::::<>Spirit<>::
+::res://Scripts/Entities/Player/::1731769233
+player.gd::GDScript::-1::1731769233::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Singletons (Autoloads)/::1731769233
 AudioManager.gd::GDScript::-1::1731462859::0::1::::<>Node<>::
 CurrencyManager.gd::GDScript::-1::1731462859::0::1::::<>Node<>::
-EnergyManager.gd::GDScript::-1::1731765487::0::1::::<>Node<>::
+EnergyManager.gd::GDScript::-1::1731769233::0::1::::<>Node<>::
 GameStateManager.gd::GDScript::-1::1731462859::0::1::::<>Node<>::
 LevelManager.gd::GDScript::-1::1731462859::0::1::::<>Node<>::
 NotificationManager.gd::GDScript::-1::1731462942::0::1::::<>Node<>::
 ScoreManager.gd::GDScript::-1::1731462859::0::1::::<>Node<>::
-SpawnManager.gd::GDScript::-1::1731765487::0::1::::<>Node<>::
-UIManager.gd::GDScript::-1::1731765487::0::1::::<>Node<>::
-::res://Scripts/Utility Classes/::1731765487
+SpawnManager.gd::GDScript::-1::1731769233::0::1::::<>Node<>::
+UIManager.gd::GDScript::-1::1731769233::0::1::::<>Node<>::
+::res://Scripts/Utility Classes/::1731769233
 Attack.gd::GDScript::-1::1731461768::0::1::::Attack<>Resource<>::
 DefenseUnit.gd::GDScript::-1::1731461768::0::1::::DefenseUnit<>Node2D<>::
-Projectile.gd::GDScript::-1::1731765487::0::1::::Projectile<>Node2D<>::
+Projectile.gd::GDScript::-1::1731769233::0::1::::Projectile<>Node2D<>::
 Spirit.gd::GDScript::-1::1731538579::0::1::::Spirit<>Node2D<>::
-::res://Sprites/::1731765487
+::res://Sprites/::1731769233
 ::res://Sprites/Entities/::1731119287
 ::res://Sprites/Entities/Enemies/::1731101363
-::res://Sprites/Entities/Enemies/Bat/::1731765765
+::res://Sprites/Entities/Enemies/Bat/::1731766002
 bat-sheet.png::CompressedTexture2D::5502454205105015071::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Enemies/Bear/::1731765765
+::res://Sprites/Entities/Enemies/Bear/::1731766002
 bear-sheet.png::CompressedTexture2D::4089884094251944548::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Enemies/Bunny/::1731765765
+::res://Sprites/Entities/Enemies/Bunny/::1731766002
 bunny-sheet.png::CompressedTexture2D::7422092601413874530::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Enemies/Death/::1731765765
+::res://Sprites/Entities/Enemies/Death/::1731766002
 enemy-deadth.png::CompressedTexture2D::5002107360349538610::1731101363::1731766002::1::::<><>::
 enemy-death-sheet.png::CompressedTexture2D::773389157157339208::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Enemies/Frog/::1731765765
+::res://Sprites/Entities/Enemies/Frog/::1731766002
 frog-idle.png::CompressedTexture2D::3495087468323830200::1731101363::1731766002::1::::<><>::
 frog-jump.png::CompressedTexture2D::1984997332916687828::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Enemies/Mushroom/::1731765765
+::res://Sprites/Entities/Enemies/Mushroom/::1731766002
 mushroom-sheet.png::CompressedTexture2D::8893647340090054828::1731101363::1731766002::1::::<><>::
 mushroom-small-sheet.png::CompressedTexture2D::4104054383583004367::1731101363::1731766002::1::::<><>::
 ::res://Sprites/Entities/FriendSpirits/::1731101363
-::res://Sprites/Entities/FriendSpirits/Dog/::1731765765
+::res://Sprites/Entities/FriendSpirits/Dog/::1731766002
 dog-idle.png::CompressedTexture2D::4745223448129072711::1731101363::1731766002::1::::<><>::
 dog.png::CompressedTexture2D::538400567058864187::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/FriendSpirits/Fox/::1731765765
+::res://Sprites/Entities/FriendSpirits/Fox/::1731766002
 fox-sheet.png::CompressedTexture2D::2504777956274223901::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/FriendSpirits/Owl/::1731765765
+::res://Sprites/Entities/FriendSpirits/Owl/::1731766002
 owl-sheet.png::CompressedTexture2D::1276102309969009662::1731101363::1731766002::1::::<><>::
-::res://Sprites/Entities/Player/::1731765765
+::res://Sprites/Entities/Player/::1731766002
 ghost.png::CompressedTexture2D::9087240204906805251::1731101363::1731766002::1::::<><>::
 ghost_dead.png::CompressedTexture2D::8193364719593598655::1731101363::1731766002::1::::<><>::
 ghost_hit.png::CompressedTexture2D::622115699134468209::1731101363::1731766002::1::::<><>::
 ghost_normal-Sheet.png::CompressedTexture2D::6037847729108658170::1731120141::1731766002::1::::<><>::
 ghost_normal.png::CompressedTexture2D::5536995561472175173::1731101363::1731766002::1::::<><>::
 ::res://Sprites/Environment/::1731109695
-::res://Sprites/Environment/Outdoor decoration/::1731765765
+::res://Sprites/Environment/Outdoor decoration/::1731766002
 Bridge_Wood.png::CompressedTexture2D::6194679777989119818::1731109677::1731766002::1::::<><>::
 Chest.png::CompressedTexture2D::263315153918252441::1731109677::1731766002::1::::<><>::
 Fences.png::CompressedTexture2D::7863506660481998649::1731109677::1731766002::1::::<><>::
@@ -73,7 +73,7 @@ House.png::CompressedTexture2D::5968526857541027486::1731109677::1731766002::1::
 Oak_Tree.png::CompressedTexture2D::543345265130035075::1731109677::1731766002::1::::<><>::
 Oak_Tree_Small.png::CompressedTexture2D::4011447783503485521::1731109677::1731766002::1::::<><>::
 Outdoor_Decor_Free.png::CompressedTexture2D::7002010657751736821::1731109677::1731766002::1::::<><>::
-::res://Sprites/Environment/Tiles/::1731765765
+::res://Sprites/Environment/Tiles/::1731766002
 Beach_Tile.png::CompressedTexture2D::3908409337219164660::1731109677::1731766002::1::::<><>::
 Cliff_Tile.png::CompressedTexture2D::1862269018746721077::1731109678::1731766002::1::::<><>::
 FarmLand_Tile.png::CompressedTexture2D::7832696230923623312::1731109678::1731766002::1::::<><>::
@@ -82,12 +82,12 @@ Path_Middle.png::CompressedTexture2D::6927194171280553384::1731109678::173176600
 Path_Tile.png::CompressedTexture2D::5561655317295263887::1731109678::1731766002::1::::<><>::
 Water_Middle.png::CompressedTexture2D::5389557498981804086::1731109678::1731766002::1::::<><>::
 Water_Tile.png::CompressedTexture2D::2969036623166501677::1731109678::1731766002::1::::<><>::
-::res://Sprites/Tower/::1731765965
-blue.png::CompressedTexture2D::1362009590315382061::1731765487::1731766002::1::::<><>::
-red.png::CompressedTexture2D::1485871337694691182::1731765487::1731766002::1::::<><>::
-::res://Sprites/UI/::1731765765
+::res://Sprites/Tower/::1731769233
+blue.png::CompressedTexture2D::1362009590315382061::1731769233::1731769253::1::::<><>::
+red.png::CompressedTexture2D::1485871337694691182::1731769233::1731769253::1::::<><>::
+::res://Sprites/UI/::1731766001
 TileOutline.png::CompressedTexture2D::8602296948872418279::1731453169::1731766001::1::::<><>::
-::res://Sprites/UI/KenneyUIPackAdventure/::1731765765
+::res://Sprites/UI/KenneyUIPackAdventure/::1731766002
 banner_classic_curtain.png::CompressedTexture2D::1137664893135611751::1731109611::1731766002::1::::<><>::
 banner_hanging.png::CompressedTexture2D::5581871344669745400::1731109611::1731766002::1::::<><>::
 banner_modern.png::CompressedTexture2D::9007868104779356905::1731109611::1731766002::1::::<><>::
