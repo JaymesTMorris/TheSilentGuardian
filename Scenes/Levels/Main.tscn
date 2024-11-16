@@ -15,14 +15,11 @@
 [ext_resource type="Texture2D" uid="uid://bikhum55kifdt" path="res://Sprites/Environment/Tiles/Water_Tile.png" id="13_rn0tc"]
 [ext_resource type="Texture2D" uid="uid://cui0qal3rkauc" path="res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png" id="14_feune"]
 [ext_resource type="Texture2D" uid="uid://d0s06aewgjkr" path="res://Sprites/Environment/Outdoor decoration/Chest.png" id="15_6pyv8"]
-[ext_resource type="PackedScene" uid="uid://bk36ectdxpwd1" path="res://Scenes/Player.tscn" id="16_worj0"]
+[ext_resource type="PackedScene" uid="uid://cjixpwwdf7064" path="res://Scenes/Player.tscn" id="16_worj0"]
 [ext_resource type="Texture2D" uid="uid://dutatrqafqelr" path="res://Sprites/UI/TileOutline.png" id="17_8ib1x"]
-<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://dpe8gj2d3j7dj" path="res://Scenes/BunnySpirit.tscn" id="18_7iu1i"]
 [ext_resource type="Script" path="res://Scripts/GridSelector.gd" id="18_xt2uf"]
-=======
-[ext_resource type="PackedScene" path="res://Scenes/BunnySpirit.tscn" id="18_7iu1i"]
-[ext_resource type="Script" path="res://Scenes/Levels/GridSelector.gd" id="18_xt2uf"]
->>>>>>> main
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wg0ni"]
 texture = ExtResource("1_xchm7")
@@ -358,12 +355,9 @@ tile_set = SubResource("TileSet_ykky5")
 tile_set = SubResource("TileSet_6hgov")
 script = ExtResource("18_xt2uf")
 
-<<<<<<< HEAD
-=======
 [node name="BunnySpirit" type="Node2D" parent="." instance=ExtResource("18_7iu1i")]
 position = Vector2(-696, -60)
 
->>>>>>> main
 [node name="Player" parent="." instance=ExtResource("16_worj0")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
