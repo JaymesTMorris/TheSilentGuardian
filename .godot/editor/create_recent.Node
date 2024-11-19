@@ -1,3 +1,6 @@
+ColorRect
+ShaderGlobalsOverride
+TileMapLayer
 CenterContainer
 VBoxContainer
 Button
@@ -9,7 +12,3 @@ ProgressBar
 CollisionShape2D
 StaticBody2D
 Area2D
-TileMapLayer
-TileMap
-Camera2D
-AnimationPlayer
