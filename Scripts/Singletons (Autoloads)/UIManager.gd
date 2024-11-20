@@ -3,8 +3,8 @@ extends Node
 @export var healthBarValue: float = 1.0
 @export var energyBarValue: float = 1.0
 @export var currencyLabelValue: float = 0.0
-@onready var ManaBar: ProgressBar = get_node("/root/Main/Player/Camera2D/UserInterface/ManaBar")
-@onready var ManaDelayBar: ProgressBar = get_node("/root/Main/Player/Camera2D/UserInterface/ManaBar/DelayBar")
+@onready var ManaBar: ProgressBar = get_node("/root/Main/Player/CanvasLayer/UserInterface/ManaBar")
+@onready var ManaDelayBar: ProgressBar = get_node("/root/Main/Player/CanvasLayer/UserInterface/ManaBar/DelayBar")
 
 
 func updateHealthBar(value: float) -> void:

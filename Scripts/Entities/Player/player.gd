@@ -24,7 +24,7 @@ func _input(event: InputEvent) -> void:
 		if EnergyManager.useEnergy(25):
 			SpawnManager.spawnTower()
 			
-	if event.is_action_pressed("ui_accept"): # Keyboard [Space]
+	if event.is_action_pressed("ui_accept"): # Keyboard [Space] or [Enter]
 		SpawnManager.spawnSpirit()
 
 	# Explicitly check for collisions and stop if a collision is detected
