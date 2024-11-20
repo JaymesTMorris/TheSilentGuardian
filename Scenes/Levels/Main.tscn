@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://jtvvtrc86ubw"]
+[gd_scene load_steps=33 format=4 uid="uid://jtvvtrc86ubw"]
 
 [ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_ak8qq"]
 [ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="2_cjuyj"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://h0g21uugjjjf" path="res://Sprites/Environment/Outdoor decoration/Oak_Tree.png" id="13_j7267"]
 [ext_resource type="FontFile" uid="uid://dy4hr1uf6lccv" path="res://Fonts/vinque/vinque rg.otf" id="14_8khpb"]
 [ext_resource type="FontFile" uid="uid://df7cd6vi8cqa8" path="res://Fonts/game-paused-demo/Game Paused DEMO.otf" id="15_17tq2"]
+[ext_resource type="AudioStream" uid="uid://p3g6u1qkyg8" path="res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav" id="15_pdv0s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk87i"]
 texture = ExtResource("7_fy6wy")
@@ -323,6 +324,10 @@ text = "The Silent Guardian"
 label_settings = SubResource("LabelSettings_4hci6")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(477, 301)
+stream = ExtResource("15_pdv0s")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 2
