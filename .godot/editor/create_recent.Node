@@ -1,7 +1,9 @@
+CanvasLayer
+MarginContainer
+TileMapLayer
 Button
 ColorRect
 ShaderGlobalsOverride
-TileMapLayer
 CenterContainer
 VBoxContainer
 Label
@@ -11,4 +13,3 @@ Sprite2D
 ProgressBar
 CollisionShape2D
 StaticBody2D
-Area2D

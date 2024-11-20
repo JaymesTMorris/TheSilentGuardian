@@ -70,6 +70,10 @@ autoplay = "idle"
 limit_left = -320
 limit_top = 0
 limit_right = 864
-limit_bottom = 700
+limit_bottom = 656
+limit_smoothed = true
+editor_draw_limits = true
 
-[node name="UserInterface" parent="Camera2D" instance=ExtResource("3_isbsq")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UserInterface" parent="CanvasLayer" instance=ExtResource("3_isbsq")]
