@@ -1,9 +1,9 @@
+Button
 ColorRect
 ShaderGlobalsOverride
 TileMapLayer
 CenterContainer
 VBoxContainer
-Button
 Label
 TextureRect
 Control
