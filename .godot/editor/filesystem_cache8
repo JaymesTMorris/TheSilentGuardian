@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732212755
+::res://::1732214422
 ::res://Fonts/::1732149622
 ::res://Fonts/game-paused-demo/::1732149642
 1001fonts-game-paused-demo-eula.txt::TextFile::-1::1732149622::0::1::::<><>::
@@ -20,21 +20,21 @@ main_menu.gd::GDScript::-1::1732149623::0::1::::<>Control<>::
 Player.tscn::PackedScene::5422480449546849871::1732150208::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd<>uid://dirnmu86rb8re::::res://Scenes/UserInterface.tscn
 Tower.tscn::PackedScene::3248503438370694782::1732149623::0::1::::<><>::res://Scripts/Tower.gd<>uid://vf1c36m3pbhe::::res://Sprites/Tower/red.png
 UserInterface.tscn::PackedScene::7756679075312243714::1732150208::0::1::::<><>::
-::res://Scenes/Levels/::1732150208
+::res://Scenes/Levels/::1732214338
 back_menu.gd::GDScript::-1::1732149623::0::1::::<>Button<>::
 Credit.tscn::PackedScene::6437627760169711260::1732150208::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>res://Scenes/Levels/back_menu.gd
-Level1.tscn::PackedScene::6667767930535610226::1732150208::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>uid://cjixpwwdf7064::::res://Scenes/Player.tscn<>res://Scripts/GridSelector.gd
+Level1.tscn::PackedScene::6667767930535610226::1732214338::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>uid://cjixpwwdf7064::::res://Scenes/Player.tscn<>res://Scripts/GridSelector.gd
 Main.tscn::PackedScene::672236352931065104::1732150208::0::1::::<><>::res://Scenes/main_menu.gd<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://dy4hr1uf6lccv::::res://Fonts/vinque/vinque rg.otf<>uid://df7cd6vi8cqa8::::res://Fonts/game-paused-demo/Game Paused DEMO.otf<>uid://p3g6u1qkyg8::::res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav
 PlayGround.tscn::PackedScene::1591281128381627753::1732150208::0::1::::<><>::uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://cui0qal3rkauc::::res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png<>uid://d0s06aewgjkr::::res://Sprites/Environment/Outdoor decoration/Chest.png<>uid://cjixpwwdf7064::::res://Scenes/Player.tscn<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>uid://dpe8gj2d3j7dj::::res://Scenes/BunnySpirit.tscn<>res://Scripts/GridSelector.gd
-::res://Scripts/::1732149623
+::res://Scripts/::1732214295
 GridSelector.gd::GDScript::-1::1732149623::0::1::::<>TileMapLayer<>::
-Tower.gd::GDScript::-1::1732149623::0::1::::<>Node2D<>::
+Tower.gd::GDScript::-1::1732214295::0::1::::<>Node2D<>::
 ::res://Scripts/Entities/::1732149623
 ::res://Scripts/Entities/Enemies/::1732149623
 BunnySpirit.gd::GDScript::-1::1732149623::0::1::::<>Spirit<>::
 ::res://Scripts/Entities/Player/::1732149623
 player.gd::GDScript::-1::1732149623::0::1::::<>CharacterBody2D<>::
-::res://Scripts/Singletons (Autoloads)/::1732150208
+::res://Scripts/Singletons (Autoloads)/::1732213470
 AudioManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
 CurrencyManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
 EnergyManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
@@ -43,7 +43,7 @@ LevelManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
 NotificationManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
 ScoreManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
 SpawnManager.gd::GDScript::-1::1732150208::0::1::::<>Node<>::
-UIManager.gd::GDScript::-1::1732149623::0::1::::<>Node<>::
+UIManager.gd::GDScript::-1::1732213470::0::1::::<>Node<>::
 ::res://Scripts/Utility Classes/::1732149623
 Attack.gd::GDScript::-1::1732149623::0::1::::Attack<>Resource<>::
 DefenseUnit.gd::GDScript::-1::1732149623::0::1::::DefenseUnit<>Node2D<>::

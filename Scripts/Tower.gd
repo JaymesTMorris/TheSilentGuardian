@@ -1,18 +1,18 @@
 extends Node2D
 
-# TODO Target the closest enemy
-@onready var target: Spirit #= get_node("/root/Main/BunnySpirit")
+var target: Spirit 
 var shootTimer: Timer = Timer.new()  # Timer to control shooting interval
 
 func _ready() -> void:
 	shootTimerTick()
 
 func spawnProjectile() -> void:
-	# Instantiate and set up a new projectile
-	var projectile: Projectile = Projectile.new()
+	updateTarget()
+	if target == null: # Don't shoot if there is no target
+		return
+	var projectile: Projectile = Projectile.new(target)
 	add_child(projectile)
 	projectile.global_position = global_position  # Start at the tower's position
-	projectile.target = getClosestSpirit()  # Set the projectile's target
 
 func shootTimerTick() -> void:
 	# Add and start the shooting timer to spawn a projectile every second
@@ -26,7 +26,6 @@ func getClosestSpirit() -> Node2D:
 	var spawnManager: Node = get_node("/root/SpawnManager")
 	if spawnManager == null:
 		return null
-	
 	var closestSpirit: Node2D = null
 	var closestDistance: float = INF
 	
@@ -38,3 +37,6 @@ func getClosestSpirit() -> Node2D:
 				closestSpirit = child
 	
 	return closestSpirit
+	
+func updateTarget() -> void:
+	target = getClosestSpirit()
