@@ -358,6 +358,7 @@ script = ExtResource("18_xt2uf")
 position = Vector2(-696, -60)
 
 [node name="Player" parent="." instance=ExtResource("16_worj0")]
+position = Vector2(396, 240)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(608, 2)
