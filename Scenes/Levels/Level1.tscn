@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://b3jdjj4c00xyl"]
+[gd_scene load_steps=24 format=4 uid="uid://c186ftf22ui4i"]
 
 [ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="1_6gp1p"]
 [ext_resource type="Texture2D" uid="uid://c603de7wv2ngn" path="res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png" id="2_410q7"]

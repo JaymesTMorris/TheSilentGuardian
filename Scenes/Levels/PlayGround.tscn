@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bymc1twmvigtd"]
+[gd_scene load_steps=39 format=4 uid="uid://ww3fx4dl6h1r"]
 
 [ext_resource type="Texture2D" uid="uid://bvxi6v7r0xocq" path="res://Sprites/Environment/Tiles/Beach_Tile.png" id="1_xchm7"]
 [ext_resource type="Texture2D" uid="uid://1sdkfipibgm4" path="res://Sprites/Environment/Tiles/Cliff_Tile.png" id="2_g13tn"]
