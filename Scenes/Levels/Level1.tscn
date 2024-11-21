@@ -239,7 +239,7 @@ tile_set = SubResource("TileSet_87d1n")
 tile_set = SubResource("TileSet_cd46j")
 script = ExtResource("8_ewy5r")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("7_sdh4b")]
+[node name="Player" parent="." instance=ExtResource("7_sdh4b")]
 position = Vector2(258, 292)
 
 [node name="WorldBarrier" type="StaticBody2D" parent="."]
