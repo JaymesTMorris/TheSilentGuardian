@@ -27,7 +27,8 @@ func _on_quit_pressed() -> void:
 # Credits button pressed
 func _on_credits_pressed() -> void:
 	print("Credits Button Pressed!")
-	play_music("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
+	#play_music("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
+	AudioManager.playSound("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
 	get_tree().change_scene_to_file("res://Scenes/Levels/Credit.tscn")  # Change to Credits scene
 
 # Play round button pressed
