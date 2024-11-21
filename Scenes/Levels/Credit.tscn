@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bikhum55kifdt" path="res://Sprites/Environment/Tiles/Water_Tile.png" id="10_ayorr"]
 [ext_resource type="Texture2D" uid="uid://crbg1aytndras" path="res://Sprites/Environment/Outdoor decoration/House.png" id="11_vx3bw"]
 [ext_resource type="Texture2D" uid="uid://h0g21uugjjjf" path="res://Sprites/Environment/Outdoor decoration/Oak_Tree.png" id="12_kamef"]
-[ext_resource type="Script" path="res://Scenes/Levels/back_menu.gd" id="13_eiojg"]
+[ext_resource type="Script" path="res://Scripts/Menu Scripts/back_menu.gd" id="13_eiojg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ff2gm"]
 texture = ExtResource("2_yhus6")
