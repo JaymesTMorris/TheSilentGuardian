@@ -13,8 +13,15 @@ var distance: float # Distance to target
 # TODO Add minimum speed
 #endregion
 
+func _init(target: Spirit) -> void:
+	self.target = target
+
 func _ready() -> void:
 	add_child(collisionTimer) # Create timer used for speed calculations
+	
+	if target == null:
+		push_warning("%s (Projectile): Initialized with no target; Deleting" % name)
+		queue_free()
 	
 	if not sprite:
 		createProjectileSprite()

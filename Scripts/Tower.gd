@@ -1,18 +1,18 @@
 extends Node2D
 
-# TODO Target the closest enemy
-@onready var target: Spirit #= get_node("/root/Main/BunnySpirit")
+var target: Spirit 
 var shootTimer: Timer = Timer.new()  # Timer to control shooting interval
 
 func _ready() -> void:
 	shootTimerTick()
 
 func spawnProjectile() -> void:
-	# Instantiate and set up a new projectile
-	var projectile: Projectile = Projectile.new()
+	updateTarget()
+	if target == null: # Don't shoot if there is no target
+		return
+	var projectile: Projectile = Projectile.new(target)
 	add_child(projectile)
 	projectile.global_position = global_position  # Start at the tower's position
-	projectile.target = getClosestChild(global_position)  # Set the projectile's target
 
 func shootTimerTick() -> void:
 	# Add and start the shooting timer to spawn a projectile every second
@@ -22,20 +22,21 @@ func shootTimerTick() -> void:
 	shootTimer.connect("timeout", Callable(self, "spawnProjectile"))
 	shootTimer.start()
 
-# Function to find the closest child of SpawnManager to the given position
-func getClosestChild(targetGlobalPosition: Vector2) -> Node:
-	var closestNode: Node = null
-	var shortestDistance: float = INF
-
-	# Ensure the singleton exists and has children
-	if SpawnManager and SpawnManager.get_child_count() > 0:
-		for child in SpawnManager.get_children():
-			if child is Node2D:
-				var childGlobalPosition: Vector2 = child.global_position
-				var distance: float = targetGlobalPosition.distance_to(childGlobalPosition)
-				
-				if distance < shortestDistance:
-					shortestDistance = distance
-					closestNode = child
-
-	return closestNode
+func getClosestSpirit() -> Node2D:
+	var spawnManager: Node = get_node("/root/SpawnManager")
+	if spawnManager == null:
+		return null
+	var closestSpirit: Node2D = null
+	var closestDistance: float = INF
+	
+	for child in spawnManager.get_children():
+		if child is Spirit:
+			var distance: float = position.distance_to(child.position)
+			if distance < closestDistance:
+				closestDistance = distance
+				closestSpirit = child
+	
+	return closestSpirit
+	
+func updateTarget() -> void:
+	target = getClosestSpirit()
