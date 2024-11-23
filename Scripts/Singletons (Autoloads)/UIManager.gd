@@ -1,12 +1,10 @@
 extends Node
 
-#@export var healthBarValue: float = 1.0
-#@export var energyBarValue: float = 1.0
-#@export var currencyLabelValue: float = 0.0
 var HealthBar: ProgressBar
 var HealthDelayBar: ProgressBar
 var ManaBar: ProgressBar
 var ManaDelayBar: ProgressBar
+var ScoreTextLabel: RichTextLabel
 
 
 func updateHealthBar(value: float) -> void:
@@ -30,6 +28,11 @@ func updateManaBar(value: float) -> void:
 	while ManaDelayBar.value > ManaBar.value:
 		ManaDelayBar.value -= 1
 		await get_tree().create_timer(0.01).timeout
+		
+func updateScoreTextLabel(value: float) -> void:
+	# Get the mana/manaDelay bars
+	ScoreTextLabel = getScoreTextLabel()
+	ScoreTextLabel.text = str(value)
 
 #func updateCurrencyLabel(value: float) -> void:
 #	currencyLabelValue = value
@@ -44,3 +47,6 @@ func getManaBar() -> ProgressBar:
 
 func getManaDelayBar() -> ProgressBar:
 	return get_node("/root/Main/Player/CanvasLayer/UserInterface/ManaBar/DelayBar")
+	
+func getScoreTextLabel() -> RichTextLabel:
+	return get_node("/root/Main/Player/CanvasLayer/UserInterface/ScoreRect/ScoreTextLabel")

@@ -1,3 +1,5 @@
+ColorRect
+RichTextLabel
 Button
 AudioStreamPlayer2D
 VBoxContainer
@@ -7,7 +9,6 @@ CenterContainer
 HBoxContainer
 TextureRect
 Panel
-RichTextLabel
 Label
 ScrollContainer
 CanvasLayer

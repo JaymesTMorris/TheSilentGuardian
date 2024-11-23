@@ -5,10 +5,12 @@ extends Node
 
 func addScore(points: int) -> void:
 	currentScore += points
+	UIManager.updateScoreTextLabel(currentScore)
 	updateHighScore()
 
 func resetScore() -> void:
 	currentScore = 0
+	UIManager.updateScoreTextLabel(currentScore)
 
 func updateHighScore() -> void:
 	if currentScore > highScore:

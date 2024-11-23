@@ -88,3 +88,48 @@ theme_override_styles/background = SubResource("StyleBoxFlat_7kfgu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_onmdi")
 value = 100.0
 show_percentage = false
+
+[node name="ScoreRect" type="ColorRect" parent="."]
+offset_left = 925.0
+offset_top = 78.0
+offset_right = 1135.0
+offset_bottom = 109.0
+color = Color(0, 0, 0, 0.254902)
+
+[node name="ScoreLabel" type="RichTextLabel" parent="ScoreRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 191.0
+offset_bottom = 27.0
+text = "Score"
+
+[node name="ScoreTextLabel" type="RichTextLabel" parent="ScoreRect"]
+offset_left = 59.0
+offset_top = 3.0
+offset_right = 200.0
+offset_bottom = 28.0
+text = "0"
+
+[node name="ObjectiveRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 925.0
+offset_top = 15.0
+offset_right = 1135.0
+offset_bottom = 75.0
+color = Color(0, 0, 0, 0.254902)
+
+[node name="ObjectiveLabel" type="RichTextLabel" parent="ObjectiveRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 191.0
+offset_bottom = 27.0
+text = "Objectives:"
+
+[node name="ObjectiveTextLabel" type="RichTextLabel" parent="ObjectiveRect"]
+offset_left = 15.0
+offset_top = 27.0
+offset_right = 207.0
+offset_bottom = 58.0
+text = "-Protect the village!"
