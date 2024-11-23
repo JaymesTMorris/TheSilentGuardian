@@ -28,10 +28,10 @@ func takeDamage(damage: int) -> void:
 
 # Method to handle death of the spirit
 func die() -> void:
-	queue_free()  # Removes the spirit from the scene.
-	# TODO Increase the death counter
-	# TODO Earn money
-	# TODO Any other death things
+	GameStateManager.incrementSpiritsKilled(1)
+	CurrencyManager.earnCurrency(int(randf_range(20, 31))) # Earn Money (20-30 currency)
+	ScoreManager.addScore(10)
+	queue_free() # Removes the spirit from the scene.
 
 # Method to move the spirit
 func move(direction: Vector2) -> void:

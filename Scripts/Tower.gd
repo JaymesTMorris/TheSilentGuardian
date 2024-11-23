@@ -17,7 +17,7 @@ func spawnProjectile() -> void:
 func shootTimerTick() -> void:
 	# Add and start the shooting timer to spawn a projectile every second
 	add_child(shootTimer)
-	shootTimer.wait_time = 1.0  # Shoot every 1 second
+	shootTimer.wait_time = 0.25  # Shoot every 0.25 seconds
 	shootTimer.one_shot = false
 	shootTimer.connect("timeout", Callable(self, "spawnProjectile"))
 	shootTimer.start()

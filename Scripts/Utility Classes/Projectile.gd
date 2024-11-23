@@ -10,7 +10,8 @@ var collisionTimer: Timer = Timer.new()
 var sprite: Sprite2D
 var hitDistanceThreshold: float = 20.0  # How close the projectile must be to hit target
 var distance: float # Distance to target
-# TODO Add minimum speed
+var targetLastPos: Vector2 # The last posistion of the target
+var minSpeed: float = 50.0
 #endregion
 
 func _init(target: Spirit) -> void:
@@ -26,46 +27,56 @@ func _ready() -> void:
 	if not sprite:
 		createProjectileSprite()
 	
+	targetLastPos = target.global_position
 	global_position = get_parent().global_position # Ensure projectile spawns near tower
 
 	startCollisionTimer()
 
 func _process(delta: float) -> void:
-	if target:
-		# Calculate the distance to the target's global position
-		distance = global_position.distance_to(target.global_position)
-		
-		# Check if the projectile is close/on top of the target
-		if distance <= hitDistanceThreshold:
-			hitTarget()
-			return # Ensures the rest of the _process function does not run
-		
-		updateSpeed()
-		moveProjectile(delta)
+	if target and is_instance_valid(target):
+		# Update target's last known position
+		targetLastPos = target.global_position
+
+	# Calculate the distance to the last known position
+	distance = global_position.distance_to(targetLastPos)
+
+	# Check if the projectile is close to the last known position
+	if distance <= hitDistanceThreshold:
+		hitTargetOrDelete()
+		return
 	
+	updateSpeed()
+	moveProjectile(delta)
+
 #region Helper Functions
-func hitTarget() -> void:
-	# TODO Damage Target
-	queue_free()
+# Hits the target or deletes itself if no vaild target
+func hitTargetOrDelete() -> void:
+	if target and is_instance_valid(target):
+		target.takeDamage(damage)
+		queue_free()
+	else:
+		queue_free()
 
 func startCollisionTimer() -> void:
 	# Start the timer that tracks time until projectile timeout
 	collisionTimer.start()
 	collisionTimer.wait_time = 1.0
 	collisionTimer.one_shot = true
+	collisionTimer.connect("timeout", Callable(self, "hitTargetOrDelete"))
 
 func createProjectileSprite() -> void:
 	sprite = Sprite2D.new()
-	sprite.texture = preload("res://Sprites/Tower/blue.png")  # Replace with your texture path
+	sprite.texture = preload("res://Sprites/Tower/blue.png")
 	sprite.centered = true
 	sprite.position = Vector2.ZERO
 	add_child(sprite)
 
 func moveProjectile(delta: float) -> void:
-	var direction: Vector2 = (target.global_position - global_position).normalized()
+	var direction: Vector2 = (targetLastPos - global_position).normalized()
 	position += direction * speed * delta
 
 func updateSpeed() -> void:
 	if collisionTimer.time_left > 0:
 		speed = distance / collisionTimer.time_left
+		speed = max(speed, minSpeed) # Ensure speed is at least the minimum speed
 #endregion
