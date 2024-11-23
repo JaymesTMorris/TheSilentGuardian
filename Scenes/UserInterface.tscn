@@ -41,7 +41,8 @@ grow_horizontal = 2
 rotation = -1.5708
 theme_override_styles/background = SubResource("StyleBoxEmpty_c8yax")
 theme_override_styles/fill = SubResource("StyleBoxFlat_dq470")
-value = 100.0
+max_value = 1000.0
+value = 1000.0
 show_percentage = false
 
 [node name="DelayBar" type="ProgressBar" parent="HealthBar"]
@@ -54,6 +55,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_7kfgu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_onmdi")
+max_value = 1000.0
 value = 100.0
 show_percentage = false
 

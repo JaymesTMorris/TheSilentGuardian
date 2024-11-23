@@ -1,3 +1,4 @@
+res://Scripts/Singletons (Autoloads)
 res://Music&Sounds/Sounds
 res://Scenes
 res://Fonts/game-paused-demo
@@ -11,5 +12,4 @@ res://Sprites/Environment/Outdoor decoration
 res://
 >>>>>>> main
 res://Sprites/Entities/Enemies/Bunny
-res://Scripts/Singletons (Autoloads)
 res://Sprites/Entities/Player
