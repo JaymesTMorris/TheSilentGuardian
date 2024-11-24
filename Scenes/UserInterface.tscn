@@ -147,3 +147,26 @@ offset_top = 13.0
 offset_right = 250.0
 offset_bottom = 40.0
 grow_horizontal = 2
+
+[node name="CurrencyRect" type="ColorRect" parent="."]
+offset_left = 925.0
+offset_top = 112.0
+offset_right = 1135.0
+offset_bottom = 143.0
+color = Color(0, 0, 0, 0.254902)
+
+[node name="CurrencyLabel" type="RichTextLabel" parent="CurrencyRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 95.0
+offset_bottom = 27.0
+text = "Doubloons"
+
+[node name="CurrencyTextLabel" type="RichTextLabel" parent="CurrencyRect"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 3.0
+offset_right = 204.0
+offset_bottom = 28.0
+text = "0"

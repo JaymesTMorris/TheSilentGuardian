@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732461564
+::res://::1732465415
 ::res://Fonts/::1732225940
 ::res://Fonts/game-paused-demo/::1732225963
 1001fonts-game-paused-demo-eula.txt::TextFile::-1::1732225940::0::1::::<><>::
@@ -13,12 +13,13 @@ vinque rg.otf::FontFile::8904118027477792713::1732225940::1732225963::1::::<><>:
 766943__josefpres__piano-loops-149-efect-3-octave-long-loop-120-bpm.wav::AudioStreamWAV::371803387832590494::1732225941::1732225964::1::::<><>::
 ::res://Music&Sounds/Sounds/::1732225964
 506052__mellau__button-click-3.wav::AudioStreamWAV::32678117194853213::1732225941::1732225964::1::::<><>::
-::res://Scenes/::1732397963
-BunnySpirit.tscn::PackedScene::8222367106784735767::1732463178::0::1::::<><>::res://Scripts/Entities/Enemies/BunnySpirit.gd<>uid://dd0k1stfa1cbi::::res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png
-Player.tscn::PackedScene::5422480449546849871::1732225941::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd<>uid://dirnmu86rb8re::::res://Scenes/UserInterface.tscn
+::res://Scenes/::1732465267
+BearSpirit.tscn::PackedScene::1013120464212380108::1732465267::0::1::::<><>::res://Scripts/Entities/Enemies/BearSpirit.gd<>uid://byjf18jo8es8k::::res://Sprites/Entities/Enemies/Bear/bear-sheet.png
+BunnySpirit.tscn::PackedScene::8222367106784735767::1732465267::0::1::::<><>::res://Scripts/Entities/Enemies/BunnySpirit.gd<>uid://dd0k1stfa1cbi::::res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png
+Player.tscn::PackedScene::5422480449546849871::1732465267::0::1::::<><>::uid://csa1p8jhtdscg::::res://Sprites/Entities/Player/ghost_normal-Sheet.png<>res://Scripts/Entities/Player/player.gd<>uid://dirnmu86rb8re::::res://Scenes/UserInterface.tscn
 Tower.tscn::PackedScene::3248503438370694782::1732225941::0::1::::<><>::res://Scripts/Tower.gd<>uid://vf1c36m3pbhe::::res://Sprites/Tower/red.png
-UserInterface.tscn::PackedScene::7756679075312243714::1732397963::0::1::::<><>::
-::res://Scenes/Levels/::1732396580
+UserInterface.tscn::PackedScene::7756679075312243714::1732465267::0::1::::<><>::
+::res://Scenes/Levels/::1732463178
 Credit.tscn::PackedScene::6437627760169711260::1732301561::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>res://Scripts/Menu Scripts/back_menu.gd
 Level1.tscn::PackedScene::6667767930535610226::1732463178::0::1::::<><>::uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://dkbe2nsfsoa5n::::res://Sprites/Environment/Outdoor decoration/Fences.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://dutatrqafqelr::::res://Sprites/UI/TileOutline.png<>uid://cjixpwwdf7064::::res://Scenes/Player.tscn<>res://Scripts/GridSelector.gd
 Main.tscn::PackedScene::672236352931065104::1732394727::0::1::::<><>::res://Scripts/Menu Scripts/main_menu.gd<>uid://dpx7l7w4racro::::res://Sprites/Environment/Tiles/Grass_Middle.png<>uid://bvxi6v7r0xocq::::res://Sprites/Environment/Tiles/Beach_Tile.png<>uid://1sdkfipibgm4::::res://Sprites/Environment/Tiles/Cliff_Tile.png<>uid://bxff7urf5po0p::::res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png<>uid://c603de7wv2ngn::::res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png<>uid://djuhmld0ncgyi::::res://Sprites/Environment/Tiles/FarmLand_Tile.png<>uid://c5xt41tmpn2e3::::res://Sprites/Environment/Tiles/Path_Middle.png<>uid://clidwd8tbuy0n::::res://Sprites/Environment/Tiles/Path_Tile.png<>uid://ci10hvvbyny11::::res://Sprites/Environment/Tiles/Water_Middle.png<>uid://bikhum55kifdt::::res://Sprites/Environment/Tiles/Water_Tile.png<>uid://crbg1aytndras::::res://Sprites/Environment/Outdoor decoration/House.png<>uid://h0g21uugjjjf::::res://Sprites/Environment/Outdoor decoration/Oak_Tree.png<>uid://dy4hr1uf6lccv::::res://Fonts/vinque/vinque rg.otf<>uid://df7cd6vi8cqa8::::res://Fonts/game-paused-demo/Game Paused DEMO.otf<>uid://p3g6u1qkyg8::::res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav
@@ -27,15 +28,16 @@ PlayGround.tscn::PackedScene::1591281128381627753::1732225941::0::1::::<><>::uid
 GridSelector.gd::GDScript::-1::1732225941::0::1::::<>TileMapLayer<>::
 Tower.gd::GDScript::-1::1732389584::0::1::::<>Node2D<>::
 ::res://Scripts/Entities/::1732225941
-::res://Scripts/Entities/Enemies/::1732396580
-BunnySpirit.gd::GDScript::-1::1732396580::0::1::::<>Spirit<>::
-::res://Scripts/Entities/Player/::1732225941
-player.gd::GDScript::-1::1732225941::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Entities/Enemies/::1732464792
+BearSpirit.gd::GDScript::-1::1732464792::0::1::::<>Spirit<>::
+BunnySpirit.gd::GDScript::-1::1732464763::0::1::::<>Spirit<>::
+::res://Scripts/Entities/Player/::1732463835
+player.gd::GDScript::-1::1732463835::0::1::::<>CharacterBody2D<>::
 ::res://Scripts/Menu Scripts/::1732301561
 back_menu.gd::GDScript::-1::1732301561::0::1::::<>Button<>::
 Credit.gd::GDScript::-1::1732301561::0::1::::<>Control<>::
 main_menu.gd::GDScript::-1::1732301561::0::1::::<>Control<>::
-::res://Scripts/Singletons (Autoloads)/::1732397963
+::res://Scripts/Singletons (Autoloads)/::1732465207
 AudioManager.gd::GDScript::-1::1732226670::0::1::::<>Node<>::
 CurrencyManager.gd::GDScript::-1::1732225941::0::1::::<>Node<>::
 EnergyManager.gd::GDScript::-1::1732225941::0::1::::<>Node<>::
@@ -44,8 +46,8 @@ HealthManager.gd::GDScript::-1::1732396191::0::1::::<>Node<>::
 LevelManager.gd::GDScript::-1::1732225941::0::1::::<>Node<>::
 NotificationManager.gd::GDScript::-1::1732225941::0::1::::<>Node<>::
 ScoreManager.gd::GDScript::-1::1732397832::0::1::::<>Node<>::
-SpawnManager.gd::GDScript::-1::1732463178::0::1::::<>Node<>::
-UIManager.gd::GDScript::-1::1732397963::0::1::::<>Node<>::
+SpawnManager.gd::GDScript::-1::1732465207::0::1::::<>Node<>::
+UIManager.gd::GDScript::-1::1732465207::0::1::::<>Node<>::
 ::res://Scripts/Utility Classes/::1732394178
 Attack.gd::GDScript::-1::1732225941::0::1::::Attack<>Resource<>::
 DefenseUnit.gd::GDScript::-1::1732225941::0::1::::DefenseUnit<>Node2D<>::

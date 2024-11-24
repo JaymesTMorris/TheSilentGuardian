@@ -7,11 +7,13 @@ extends Node
 func spendCurrency(amount: int) -> bool:
 	if currentCurrency >= amount:
 		currentCurrency -= amount
+		UIManager.updateCurrencyTextLabel(currentCurrency)
 		return true
 	return false
 
 func earnCurrency(amount: int) -> void:
 	currentCurrency = min(currentCurrency + amount, maxCurrency)
+	UIManager.updateCurrencyTextLabel(currentCurrency)
 	incrementTotalCurrencyEarned(amount)
 
 func incrementTotalCurrencyEarned(amount: int) -> void:
