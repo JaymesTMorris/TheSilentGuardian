@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+@onready var playerCamera: Camera2D = $Camera2D
+@onready var globalCamera: Camera2D = get_node("/root/Main/Camera2D")
+
+var usingPlayerCamera: bool = true
 const SPEED: float = 200.0
 
 func _physics_process(delta: float) -> void:
@@ -26,7 +30,23 @@ func _input(event: InputEvent) -> void:
 			
 	if event.is_action_pressed("ui_accept"): # Keyboard [Space] or [Enter]
 		SpawnManager.startNight()
+		
+	if event.is_action_pressed("toggle_camera"):
+		toggleCamera()
 
 	# Explicitly check for collisions and stop if a collision is detected
 	if is_on_wall():
 		velocity = Vector2.ZERO
+
+func toggleCamera() -> void:
+	if usingPlayerCamera:
+		# Switch to the global camera
+		playerCamera.enabled = false
+		globalCamera.enabled = true
+	else:
+		# Switch back to the player camera
+		globalCamera.enabled = false
+		playerCamera.enabled = true
+	
+	usingPlayerCamera = !usingPlayerCamera
+	#print("Using Player Camera:", usingPlayerCamera)

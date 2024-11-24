@@ -71,18 +71,6 @@ func endNight() -> void:
 func timeLeft() -> float:
 	return max(nightTimer, 0.0)
 
-
-
-
-
-func spawnSpirit() -> void:
-	# Implement spirit spawning logic
-	var instance: Node = bunnyScene.instantiate()
-	var cellLocation: Vector2i = highlightLayer().highlighted_cell
-	instance.position = Vector2(cellLocation.x * cell_size.x, cellLocation.y * cell_size.y)
-	instance.z_index = 8  # Set the z_index to so it spawns above the ground
-	add_child(instance)
-
 var cell_size: Vector2 = Vector2(16, 16)  # Set cell size based on your grid
 @onready var packedScene: PackedScene = load("res://Scenes/Tower.tscn")
 
