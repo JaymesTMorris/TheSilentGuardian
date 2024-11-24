@@ -5,6 +5,7 @@ var HealthDelayBar: ProgressBar
 var ManaBar: ProgressBar
 var ManaDelayBar: ProgressBar
 var ScoreTextLabel: RichTextLabel
+var NightProgressBar: ProgressBar
 
 
 func updateHealthBar(value: float) -> void:
@@ -33,6 +34,10 @@ func updateScoreTextLabel(value: float) -> void:
 	# Get the mana/manaDelay bars
 	ScoreTextLabel = getScoreTextLabel()
 	ScoreTextLabel.text = str(value)
+	
+func updateNightProgressBar(value: float) -> void:
+	NightProgressBar = getNightProgressBar()
+	NightProgressBar.value = SpawnManager.timeLeft() / float(SpawnManager.nightLength) * 100.0
 
 #func updateCurrencyLabel(value: float) -> void:
 #	currencyLabelValue = value
@@ -44,6 +49,9 @@ func getHealthDelayBar() -> ProgressBar:
 
 func getManaBar() -> ProgressBar:
 	return get_node("/root/Main/Player/CanvasLayer/UserInterface/ManaBar")
+	
+func getNightProgressBar() -> ProgressBar:
+	return get_node("/root/Main/Player/CanvasLayer/UserInterface/NightProgressBar")
 
 func getManaDelayBar() -> ProgressBar:
 	return get_node("/root/Main/Player/CanvasLayer/UserInterface/ManaBar/DelayBar")

@@ -249,11 +249,6 @@ position = Vector2(258, 292)
 position = Vector2(457, 318)
 shape = SubResource("WorldBoundaryShape2D_ll8xn")
 
-[node name="LWall" type="CollisionShape2D" parent="WorldBarrier"]
-position = Vector2(-318, 318)
-rotation = -3.14159
-shape = SubResource("WorldBoundaryShape2D_ll8xn")
-
 [node name="TWall" type="CollisionShape2D" parent="WorldBarrier"]
 position = Vector2(350, 0)
 rotation = 4.71239
@@ -262,4 +257,9 @@ shape = SubResource("WorldBoundaryShape2D_ll8xn")
 [node name="BWall" type="CollisionShape2D" parent="WorldBarrier"]
 position = Vector2(356, 656)
 rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_ll8xn")
+
+[node name="LWall" type="CollisionShape2D" parent="WorldBarrier"]
+position = Vector2(-318, 318)
+rotation = -3.14159
 shape = SubResource("WorldBoundaryShape2D_ll8xn")

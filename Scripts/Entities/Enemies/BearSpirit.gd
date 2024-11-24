@@ -1,25 +1,25 @@
 extends Spirit
 
-# Custom properties for BunnySpirit
+# Custom properties for BearSpirit
 @export var moveDirection: Vector2 = Vector2.RIGHT  # Direction to move (right)
 
 func _ready() -> void:
 	# Initialize BearSpirit-specific properties
-	initialize("BunnySpirit", 100, 100.0, createBunnyAttack(), sprite)
+	initialize("BearSpirit", 200, 50.0, createBearAttack(), sprite)
 
 func _process(delta: float) -> void:
 	# Continuously move in the specified direction
 	move(moveDirection)
 	
-	# Check if the bunny reaches the village barrier
+	# Check if the bear reaches the village barrier
 	if global_position.x >= getVillageBarrierXPos():
 		HealthManager.takeDamage(attack.damage)
 		queue_free()
 
-func createBunnyAttack() -> Attack:
+func createBearAttack() -> Attack:
 	# Create an instance of BearSpirit's attack
 	var attack: Attack = Attack.new()
-	attack.initialize("BunnyAttack", 50, 0, 0, 0, null)
+	attack.initialize("BearAttack", 200, 0, 0, 0, null)
 	return attack
 
 func getVillageBarrierXPos() -> float:
