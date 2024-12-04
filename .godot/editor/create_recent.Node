@@ -1,9 +1,10 @@
+RichTextLabel
+Label
 ColorRect
 Camera2D
 ProgressBar
 AnimationPlayer
 Sprite2D
-RichTextLabel
 Button
 AudioStreamPlayer2D
 VBoxContainer
@@ -11,4 +12,3 @@ CheckButton
 Container
 CenterContainer
 HBoxContainer
-TextureRect
