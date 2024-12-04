@@ -1,7 +1,7 @@
 extends Node
 
 # Export variables for flexibility
-@export var nightLength: int = 60
+@export var nightLength: int = 10
 @export var baseSpawnInterval: float = 2
 @export var minSpawnInterval: float = 0.1
 @export var spawnXPosition: int = -320
@@ -16,6 +16,7 @@ extends Node
 var nightTimer: float = 0.0
 var spawnTimer: float = 0.0
 var isNightActive: bool = false
+var currentWave: int = 1
 
 # Function to start the night cycle
 func startNight() -> void:
@@ -45,11 +46,18 @@ func _process(delta: float) -> void:
 		else:
 			# Night ends
 			endNight()
+			# Start New Night
+			currentWave += 1
+			startNight()
 
 # Function to spawn an enemy
 func spawnEnemy() -> void:
 	# Randomly select enemy type (70% Enemy 1, 30% Enemy 2)
-	var enemyScene: PackedScene = bunnyScene if randf() <= 0.7 else bearScene
+	var enemyScene: PackedScene 
+	if currentWave <= 3:
+		enemyScene = bunnyScene
+	else:
+		enemyScene = bunnyScene if randf() <= 0.7 else bearScene
 	
 	# Instance the enemy and set its position
 	var enemy: Node2D = enemyScene.instantiate() as Node2D
