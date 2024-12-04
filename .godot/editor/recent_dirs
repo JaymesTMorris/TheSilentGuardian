@@ -1,9 +1,10 @@
+res://Scripts
+res://Fonts/vinque
 res://Scenes
 res://Scripts/Entities/Enemies
 res://Scripts/Singletons (Autoloads)
 res://Music&Sounds/Sounds
 res://Fonts/game-paused-demo
-res://Fonts/vinque
 res://Scenes/Levels
 res://Sprites/Environment/Tiles
 <<<<<<< HEAD

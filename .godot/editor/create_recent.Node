@@ -1,8 +1,8 @@
+ColorRect
 Camera2D
 ProgressBar
 AnimationPlayer
 Sprite2D
-ColorRect
 RichTextLabel
 Button
 AudioStreamPlayer2D
@@ -12,4 +12,3 @@ Container
 CenterContainer
 HBoxContainer
 TextureRect
-Panel

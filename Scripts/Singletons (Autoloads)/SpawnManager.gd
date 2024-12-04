@@ -2,8 +2,8 @@ extends Node
 
 # Export variables for flexibility
 @export var nightLength: int = 60
-@export var baseSpawnInterval: float = 1.5
-@export var minSpawnInterval: float = 0.5
+@export var baseSpawnInterval: float = 2
+@export var minSpawnInterval: float = 0.1
 @export var spawnXPosition: int = -320
 @export var minYPosition: float = 25
 @export var maxYPosition: float = 625
@@ -83,3 +83,17 @@ func spawnTower() -> void:
 
 func highlightLayer() -> TileMapLayer:
 	return get_node("/root/Main/Map/HighlightLayer")
+	
+func deleteAllSpirits() -> void:
+	for child in get_children():
+		child.queue_free()
+		
+# Function to stop the night immediately
+func stopNight() -> void:
+	if isNightActive:
+		print("Night Stopped!")
+		isNightActive = false
+		nightTimer = 0.0  # Reset the night timer
+		spawnTimer = 0.0  # Reset the spawn timer
+		set_process(false)  # Stop the _process function from running
+		deleteAllSpirits()  # Clear all active spirits

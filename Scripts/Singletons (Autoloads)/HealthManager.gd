@@ -10,7 +10,10 @@ func takeDamage(amount: int) -> void:
 		incrementDamageTaken(currentHealth)
 		currentHealth = 0
 		UIManager.updateHealthBar(currentHealth)
-		#TODO Lose Game
+		
+		# Game Over
+		SpawnManager.stopNight()
+		get_tree().change_scene_to_file("res://Scenes/Levels/GameOver.tscn")
 	else:
 		incrementDamageTaken(amount)
 		currentHealth -= amount
