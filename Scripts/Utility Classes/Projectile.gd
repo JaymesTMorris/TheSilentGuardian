@@ -18,6 +18,8 @@ func _init(target: Spirit) -> void:
 	self.target = target
 
 func _ready() -> void:
+	z_index = 8
+	
 	add_child(collisionTimer) # Create timer used for speed calculations
 	
 	if target == null:

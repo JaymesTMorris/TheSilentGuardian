@@ -4,6 +4,7 @@ var target: Spirit
 var shootTimer: Timer = Timer.new()  # Timer to control shooting interval
 
 func _ready() -> void:
+	z_index = 5
 	# Add and configure the shooting timer
 	add_child(shootTimer)
 	shootTimer.one_shot = false

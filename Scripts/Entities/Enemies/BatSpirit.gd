@@ -6,6 +6,7 @@ var baseAtk: float = 100 #This is pre-wave calculation
 var baseSpd: float = 250 #This is pre-wave calculation
 
 func _ready() -> void:
+	z_index = 2
 	# Initialize Spirit-specific properties
 	var atk: float = baseAtk*pow(1.1, (SpawnManager.currentWave-1)/10)
 	var speed: float = baseAtk*pow(1.1, (SpawnManager.currentWave-1)/2)

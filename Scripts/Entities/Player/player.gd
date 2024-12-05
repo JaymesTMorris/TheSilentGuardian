@@ -54,6 +54,7 @@ func toggleCamera() -> void:
 	#print("Using Player Camera:", usingPlayerCamera)
 	
 func _ready() -> void:
+	z_index = 10
 	# Ensure the player is using the scene camera
 	playerCamera.enabled = false
 	globalCamera.enabled = true

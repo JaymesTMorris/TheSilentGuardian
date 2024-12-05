@@ -6,6 +6,7 @@ var baseAtk: float = 200 #This is pre-wave calculation
 var baseSpd: float = 55
 
 func _ready() -> void:
+	z_index = 2
 	# Initialize Spirit-specific properties
 	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/2)
 	var atk: float = baseAtk*pow(1.1, (SpawnManager.currentWave-1)/10)
