@@ -28,6 +28,7 @@ func takeDamage(damage: int) -> void:
 
 # Method to handle death of the spirit
 func die() -> void:
+	AudioManager.playSound("res://Music&Sounds/Sounds/417486__mentoslat__8-bit-death-sound.wav")
 	GameStateManager.incrementSpiritsKilled(1)
 	CurrencyManager.earnCurrency(int(randf_range(20, 31))) # Earn Money (20-30 currency)
 	ScoreManager.addScore(10)
