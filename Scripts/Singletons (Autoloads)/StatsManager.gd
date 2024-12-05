@@ -36,7 +36,10 @@ func incrementMaxHealth() -> void:
 func incrementManaRegen() -> void:
 	if ManaRegen >= 0.5:
 		print("ManaRegen is already at the maximum value of 0.5.")
+<<<<<<< HEAD
 		isManaRegenMaxed = true
+=======
+>>>>>>> 4ac7c43b66689538cb752c304e7f3c9f050ed9b0
 		return
 	if CurrencyManager.spendCurrency(50):
 		ManaRegen += 0.025
@@ -67,7 +70,10 @@ func incrementTowerDamage() -> void:
 func incrementTowerAtkSpd() -> void:
 	if TowerAtkSpd <= 0.1:
 		print("TowerAtkSpd is already at the minimum value of 0.1.")
+<<<<<<< HEAD
 		isTowerAtkSpdMaxed = true
+=======
+>>>>>>> 4ac7c43b66689538cb752c304e7f3c9f050ed9b0
 		return
 	if CurrencyManager.spendCurrency(50):
 		TowerAtkSpd -= 0.025
