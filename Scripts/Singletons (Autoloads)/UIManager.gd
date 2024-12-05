@@ -19,6 +19,7 @@ var MaxMana: Label
 var TowerRange: Label
 var TowerDamage: Label
 var TowerAtkSpd: Label
+var MaxTower: Label
 
 func initializeUIElements() -> void:
 	# Initialize core UI elements
@@ -40,6 +41,7 @@ func initializeUIElements() -> void:
 	TowerRange = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerRange") as Label
 	TowerDamage = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerDamage") as Label
 	TowerAtkSpd = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerAtkSpd") as Label
+	MaxTower = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/MaxTower") as Label
 	
 	logMissingUIElements()
 
@@ -61,6 +63,7 @@ func logMissingUIElements() -> void:
 	if TowerRange == null: print("TowerRange is missing!")
 	if TowerDamage == null: print("TowerDamage is missing!")
 	if TowerAtkSpd == null: print("TowerAtkSpd is missing!")
+	if MaxTower == null: print("TowerAtkSpd is missing!")
 
 func updateHealthBar(value: float) -> void:
 	if HealthBar == null or HealthDelayBar == null:
@@ -119,9 +122,22 @@ func updateWaveLabel() -> void:
 func updateUpgradesLabels() -> void:
 	Heal.text = ""
 	HealAmount.text = str(StatsManager.HealAmount)+"%"
-	MaxHealth.text = str(HealthManager.maxHealth)
-	ManaRegen.text = str(StatsManager.ManaRegen)+" per 0.1s"
+	MaxHealth.text = str(HealthManager.maxHealth)+"HP"
+	
 	MaxMana.text = str(StatsManager.MaxMana)
 	TowerRange.text = str(StatsManager.TowerRange)
 	TowerDamage.text = str(StatsManager.TowerDamage)
-	TowerAtkSpd.text = str(StatsManager.TowerAtkSpd)+"s to reload"
+	TowerAtkSpd.text = str(StatsManager.TowerAtkSpd)+"s"
+	
+	if StatsManager.isManaRegenMaxed:
+		ManaRegen.text = "MAX"
+	else:
+		ManaRegen.text = str(StatsManager.ManaRegen)+""
+	if StatsManager.isTowerAtkSpdMaxed:
+		TowerAtkSpd.text = "MAX"
+	else:
+		TowerAtkSpd.text = str(StatsManager.TowerAtkSpd)+"s"
+	if StatsManager.isMaxTowersMaxed:
+		MaxTower.text = "MAX"
+	else:
+		MaxTower.text = str(StatsManager.MaxTowers)
