@@ -13,7 +13,7 @@ func takeDamage(amount: int) -> void:
 		
 		# Game Over
 		SpawnManager.stopNight()
-		get_tree().change_scene_to_file("res://Scenes/Levels/GameOver.tscn")
+		get_tree().change_scene_to_file("res://Scenes/UI/GameOver.tscn")
 	else:
 		incrementDamageTaken(amount)
 		currentHealth -= amount

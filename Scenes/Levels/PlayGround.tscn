@@ -15,10 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://bikhum55kifdt" path="res://Sprites/Environment/Tiles/Water_Tile.png" id="13_rn0tc"]
 [ext_resource type="Texture2D" uid="uid://cui0qal3rkauc" path="res://Sprites/Environment/Outdoor decoration/Bridge_Wood.png" id="14_feune"]
 [ext_resource type="Texture2D" uid="uid://d0s06aewgjkr" path="res://Sprites/Environment/Outdoor decoration/Chest.png" id="15_6pyv8"]
-[ext_resource type="PackedScene" uid="uid://cjixpwwdf7064" path="res://Scenes/Player.tscn" id="16_worj0"]
+[ext_resource type="PackedScene" uid="uid://cjixpwwdf7064" path="res://Scenes/Entities/Player.tscn" id="16_worj0"]
 [ext_resource type="Texture2D" uid="uid://dutatrqafqelr" path="res://Sprites/UI/TileOutline.png" id="17_8ib1x"]
-[ext_resource type="PackedScene" uid="uid://dpe8gj2d3j7dj" path="res://Scenes/BunnySpirit.tscn" id="18_7iu1i"]
-[ext_resource type="Script" path="res://Scripts/GridSelector.gd" id="18_xt2uf"]
+[ext_resource type="PackedScene" uid="uid://dpe8gj2d3j7dj" path="res://Scenes/Entities/BunnySpirit.tscn" id="18_7iu1i"]
+[ext_resource type="Script" path="res://Scripts/Utility Classes/GridSelector.gd" id="18_xt2uf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wg0ni"]
 texture = ExtResource("1_xchm7")

@@ -7,6 +7,9 @@ extends Node
 var soundPlayer: AudioStreamPlayer
 var musicPlayer: AudioStreamPlayer
 
+# Store the currently playing music path
+var currentMusicPath: String = ""
+
 func _ready() -> void:
 	# Initialize audio players
 	soundPlayer = AudioStreamPlayer.new()
@@ -39,18 +42,22 @@ func playMusic(musicPath: String, loop: bool = true) -> void:
 	if music == null:
 		print("Failed to load music: " + musicPath)
 		return
-
+	
+	# Check if the loaded music supports looping
+	if music is AudioStreamOggVorbis or music is AudioStreamMP3:
+		music.loop = loop
+	
 	if musicPlayer.playing:
 		musicPlayer.stop()
 	
 	musicPlayer.stream = music
 	musicPlayer.volume_db = linear_to_db(volume)
-	musicPlayer.loop = loop
 	musicPlayer.play()
 
 func stopMusic() -> void:
 	if musicPlayer.playing:
 		musicPlayer.stop()
+		currentMusicPath = "" 
 
 func setVolume(level: float) -> void:
 	volume = level
