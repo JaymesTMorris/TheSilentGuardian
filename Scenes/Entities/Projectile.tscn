@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bkrvuh1vbomnx"]
 
-[ext_resource type="Texture2D" uid="uid://bbmaa2jnkx7e4" path="res://Sprites/Tower/necrobolt1_strip.png" id="1_nx267"]
+[ext_resource type="Texture2D" uid="uid://cbve5robses6d" path="res://Sprites/Tower/necrobolt1_strip.png" id="1_nx267"]
 [ext_resource type="Script" path="res://Scripts/Utility Classes/Projectile.gd" id="1_oc66k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_puc21"]

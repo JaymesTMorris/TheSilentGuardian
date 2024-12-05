@@ -4,6 +4,8 @@ var target: Spirit
 var shootTimer: Timer = Timer.new()  # Timer to control shooting interval
 
 func _ready() -> void:
+	# Set the z_index for the tower
+	z_index = 5
 	shootTimerTick()
 
 func spawnProjectile() -> void:

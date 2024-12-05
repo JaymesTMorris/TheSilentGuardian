@@ -4,7 +4,6 @@
 [ext_resource type="Script" path="res://Scripts/Entities/Player/player.gd" id="1_we338"]
 [ext_resource type="PackedScene" uid="uid://dirnmu86rb8re" path="res://Scenes/UI/UserInterface.tscn" id="3_isbsq"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gsgu8"]
 size = Vector2(52, 70)
 
