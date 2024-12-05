@@ -392,6 +392,6 @@ offset_top = 548.0
 offset_right = 1078.0
 offset_bottom = 588.0
 theme_override_fonts/font = ExtResource("16_c3ybl")
-text = "Continue →"
+text = "Quit"
 
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

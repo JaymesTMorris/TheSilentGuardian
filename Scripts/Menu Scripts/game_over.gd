@@ -14,8 +14,6 @@ func showStats() -> void:
 func getStatsLabel() -> Label:
 	return get_node("/root/GameOver/StatsBox")
 	
-
-
 func _on_quit_pressed():
 	AudioManager.playSound("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
 	get_tree().quit()
