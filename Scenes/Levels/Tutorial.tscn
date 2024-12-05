@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://c7e44cdaprnba"]
+[gd_scene load_steps=35 format=4 uid="uid://c7e44cdaprnba"]
 
 [ext_resource type="Script" path="res://Scripts/Menu Scripts/main_menu.gd" id="1_wuvd5"]
 [ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="2_437mh"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bxff7urf5po0p" path="res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png" id="6_thduf"]
 [ext_resource type="Texture2D" uid="uid://c603de7wv2ngn" path="res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png" id="7_y5r0h"]
 [ext_resource type="Texture2D" uid="uid://c5xt41tmpn2e3" path="res://Sprites/Environment/Tiles/Path_Middle.png" id="8_8abyp"]
+[ext_resource type="Texture2D" uid="uid://v1jvynmcmk2d" path="res://Sprites/Tower/Crystal.png" id="8_pf2cf"]
 [ext_resource type="Texture2D" uid="uid://clidwd8tbuy0n" path="res://Sprites/Environment/Tiles/Path_Tile.png" id="9_p6ayi"]
 [ext_resource type="Texture2D" uid="uid://ci10hvvbyny11" path="res://Sprites/Environment/Tiles/Water_Middle.png" id="10_6ev36"]
 [ext_resource type="Texture2D" uid="uid://bikhum55kifdt" path="res://Sprites/Environment/Tiles/Water_Tile.png" id="11_8dbuv"]
@@ -146,6 +147,95 @@ texture = ExtResource("7_y5r0h")
 2:11/0 = 0
 3:11/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pg7ir"]
+texture = ExtResource("8_pf2cf")
+3:1/0 = 0
+4:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+35:1/0 = 0
+36:1/0 = 0
+43:1/0 = 0
+44:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+35:2/0 = 0
+36:2/0 = 0
+43:2/0 = 0
+44:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+26:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+34:3/0 = 0
+35:3/0 = 0
+36:3/0 = 0
+37:3/0 = 0
+42:3/0 = 0
+43:3/0 = 0
+44:3/0 = 0
+45:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+34:4/0 = 0
+35:4/0 = 0
+36:4/0 = 0
+37:4/0 = 0
+42:4/0 = 0
+43:4/0 = 0
+44:4/0 = 0
+45:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+35:5/0 = 0
+36:5/0 = 0
+43:5/0 = 0
+44:5/0 = 0
+13:1/0 = 0
+13:2/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4gmpd"]
 texture = ExtResource("3_7micg")
 0:0/0 = 0
@@ -276,6 +366,7 @@ sources/8 = SubResource("TileSetAtlasSource_qoa7i")
 sources/9 = SubResource("TileSetAtlasSource_g7uhw")
 sources/10 = SubResource("TileSetAtlasSource_4flxx")
 sources/11 = SubResource("TileSetAtlasSource_mwlo2")
+sources/12 = SubResource("TileSetAtlasSource_pg7ir")
 
 [sub_resource type="LabelSettings" id="LabelSettings_4hci6"]
 font = ExtResource("14_ysp0p")
