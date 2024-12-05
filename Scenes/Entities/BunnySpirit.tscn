@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpe8gj2d3j7dj"]
 
-[ext_resource type="Script" path="res://Scripts/Entities/Enemies/BunnySpirit.gd" id="1_dbjvm"]
-[ext_resource type="Texture2D" uid="uid://dd0k1stfa1cbi" path="res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png" id="2_sm28r"]
+[ext_resource type="Script" path="res://Scripts/Entities/Enemies/BunnySpirit.gd" id="1_8t77f"]
+[ext_resource type="Texture2D" uid="uid://dd0k1stfa1cbi" path="res://Sprites/Entities/Enemies/Bunny/bunny-sheet.png" id="2_nxpps"]
 
 [sub_resource type="Animation" id="Animation_5j6np"]
 length = 0.001
@@ -43,12 +43,12 @@ _data = {
 }
 
 [node name="BunnySpirit" type="Node2D"]
-script = ExtResource("1_dbjvm")
+script = ExtResource("1_8t77f")
 spiritName = "Bunny Spirit"
 speed = 100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_sm28r")
+texture = ExtResource("2_nxpps")
 hframes = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]

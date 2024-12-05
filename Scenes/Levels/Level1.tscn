@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://bxff7urf5po0p" path="res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png" id="5_0mocj"]
 [ext_resource type="Texture2D" uid="uid://crbg1aytndras" path="res://Sprites/Environment/Outdoor decoration/House.png" id="6_vw2t3"]
 [ext_resource type="Texture2D" uid="uid://dutatrqafqelr" path="res://Sprites/UI/TileOutline.png" id="7_rttya"]
-[ext_resource type="PackedScene" uid="uid://cjixpwwdf7064" path="res://Scenes/Player.tscn" id="7_sdh4b"]
-[ext_resource type="Script" path="res://Scripts/GridSelector.gd" id="8_ewy5r"]
+[ext_resource type="PackedScene" uid="uid://cjixpwwdf7064" path="res://Scenes/Entities/Player.tscn" id="7_sdh4b"]
+[ext_resource type="Script" path="res://Scripts/Utility Classes/GridSelector.gd" id="8_ewy5r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aql3h"]
 texture = ExtResource("1_6gp1p")

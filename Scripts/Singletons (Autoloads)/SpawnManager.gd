@@ -9,8 +9,8 @@ extends Node
 @export var maxYPosition: float = 625
 
 # PackedScene references for the enemy types
-@onready var bunnyScene: PackedScene = load("res://Scenes/BunnySpirit.tscn")
-@onready var bearScene: PackedScene = load("res://Scenes/BearSpirit.tscn")
+@onready var bunnyScene: PackedScene = load("res://Scenes/Entities/BunnySpirit.tscn")
+@onready var bearScene: PackedScene = load("res://Scenes/Entities/BearSpirit.tscn")
 
 # Variables for internal state
 var nightTimer: float = 0.0
@@ -81,7 +81,7 @@ func timeLeft() -> float:
 	return max(nightTimer, 0.0)
 
 var cell_size: Vector2 = Vector2(16, 16)  # Set cell size based on your grid
-@onready var packedScene: PackedScene = load("res://Scenes/Tower.tscn")
+@onready var packedScene: PackedScene = load("res://Scenes/Entities/Tower.tscn")
 
 func spawnTower() -> void:
 	var instance: Node = packedScene.instantiate()

@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	AudioManager.playMusic("res://Music&Sounds/Music/766943__josefpres__piano-loops-149-efect-3-octave-long-loop-120-bpm.wav")
 	UIManager.initializeUIElements()
 
 func _input(event: InputEvent) -> void:
