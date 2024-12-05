@@ -4,9 +4,9 @@ extends Node
 var HealAmount: float = 10 # +1, max 25
 #MaxHealth from HealthManager.gd +50
 var ManaRegen: float = 0.1 # +0.025, max 0.5
-var MaxMana: float = 100 # +20
+var MaxMana: float = 75 # +20
 var TowerRange: float = 250 # +50
-var TowerDamage: float = 5 # +5
+var TowerDamage: float = 20 # +5
 var TowerAtkSpd: float = 0.5 # -0.025, min 0.1
 
 # Functions to increment stats
