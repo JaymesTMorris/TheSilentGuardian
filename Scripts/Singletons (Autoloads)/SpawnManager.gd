@@ -48,6 +48,7 @@ func _process(delta: float) -> void:
 			endNight()
 			# Start New Night
 			currentWave += 1
+			UIManager.updateWaveLabel()
 			startNight()
 
 # Function to spawn an enemy

@@ -8,6 +8,7 @@ var ManaDelayBar: ProgressBar
 var ScoreTextLabel: RichTextLabel
 var NightProgressBar: ProgressBar
 var CurrencyTextLabel: RichTextLabel
+var WaveLabel: Label
 	
 func initializeUIElements() -> void:
 	HealthBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/HealthBar") as ProgressBar
@@ -17,6 +18,7 @@ func initializeUIElements() -> void:
 	ScoreTextLabel = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/ScoreRect/ScoreTextLabel") as RichTextLabel
 	NightProgressBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/NightProgressBar") as ProgressBar
 	CurrencyTextLabel = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/CurrencyRect/CurrencyTextLabel") as RichTextLabel
+	WaveLabel = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/WaveLabel") as Label
 	logMissingUIElements()
 
 func logMissingUIElements() -> void:
@@ -28,6 +30,7 @@ func logMissingUIElements() -> void:
 	if ScoreTextLabel == null: print("ScoreTextLabel is missing!")
 	if NightProgressBar == null: print("NightProgressBar is missing!")
 	if CurrencyTextLabel == null: print("CurrencyTextLabel is missing!")
+	if WaveLabel == null: print("CurrencyTextLabel is missing!")
 
 func updateHealthBar(value: float) -> void:
 	# Validate health bar elements
@@ -80,3 +83,11 @@ func updateNightProgressBar(value: float) -> void:
 		print("Cannot update NightProgressBar: Missing element.")
 		return
 	NightProgressBar.value = SpawnManager.timeLeft() / float(SpawnManager.nightLength) * 100.0
+	
+func updateWaveLabel() -> void:
+	# Validate health bar elements
+	if WaveLabel == null:
+		print("Cannot update health bar: Missing elements.")
+		return
+	WaveLabel.text = "Wave: " + str(SpawnManager.currentWave)
+		

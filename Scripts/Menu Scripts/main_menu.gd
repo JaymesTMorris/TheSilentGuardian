@@ -26,7 +26,7 @@ func _ready():
 
 func showStats() -> void:
 	var StatsLabel: Label = getStatsLabel()
-	StatsLabel.text  = "Wave:" + str(GameStateManager.currentNight)
+	StatsLabel.text  = "Wave:" + str(SpawnManager.currentWave)
 	StatsLabel.text += "\nScore:" + str(ScoreManager.currentScore)
 	StatsLabel.text += "\nSpirits Repeled:" + str(GameStateManager.spiritsKilled)
 	#StatsLabel.text += "\nTime Survived:" + str(GameStateManager.timeSurvived)

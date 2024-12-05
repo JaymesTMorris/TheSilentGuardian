@@ -1,25 +1,29 @@
 extends Spirit
 
-# Custom properties for BunnySpirit
 @export var moveDirection: Vector2 = Vector2.RIGHT  # Direction to move (right)
+var baseHP: float = 50 #This is pre-wave calculation
+var baseAtk: float = 20 #This is pre-wave calculation
+var baseSpd: float = 100
 
 func _ready() -> void:
-	# Initialize BunnySpirit-specific properties
-	initialize("BunnySpirit", 100*LevelManager.spiritHealthMultiplier, 100.0, createBunnyAttack(), sprite)
+	# Initialize Spirit-specific properties
+	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/2)
+	var atk: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/3)
+	initialize("BearSpirit", hp, baseSpd, createBearAttack(atk), sprite)
 
 func _process(delta: float) -> void:
 	# Continuously move in the specified direction
 	move(moveDirection)
 	
-	# Check if the bunny reaches the village barrier
+	# Check if the spirit reaches the village barrier
 	if global_position.x >= getVillageBarrierXPos():
 		HealthManager.takeDamage(attack.damage)
 		queue_free()
 
-func createBunnyAttack() -> Attack:
-	# Create an instance of BunnySpirit's attack
+func createBearAttack(atkDamage: float) -> Attack:
+	# Create an instance of Spirit's attack
 	var attack: Attack = Attack.new()
-	attack.initialize("BunnyAttack", 50*LevelManager.spiritDamageMultiplier, 0, 0, 0, null) #deafult 50 damage
+	attack.initialize("BearAttack", 200, 0, 0, 0, null)
 	return attack
 
 func getVillageBarrierXPos() -> float:
