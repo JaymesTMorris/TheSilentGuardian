@@ -89,6 +89,7 @@ func spawnTower() -> void:
 	instance.position = Vector2(cellLocation.x * cell_size.x, cellLocation.y * cell_size.y)
 	instance.z_index = 8  # Set the z_index to so it spawns above the ground
 	add_child(instance)
+	StatsManager.TowersPlaced += 1
 
 func highlightLayer() -> TileMapLayer:
 	return get_node("/root/Main/Map/HighlightLayer")

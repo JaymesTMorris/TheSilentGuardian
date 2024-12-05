@@ -207,9 +207,9 @@ layout_mode = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 777.0
-offset_top = -305.0
+offset_top = -320.0
 offset_right = 1069.0
-offset_bottom = -27.0
+offset_bottom = -4.0
 grow_vertical = 0
 color = Color(0, 0, 0, 0.254902)
 
@@ -218,8 +218,9 @@ layout_mode = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 189.0
-offset_top = -268.0
+offset_top = -308.0
 offset_right = 288.0
+offset_bottom = -6.0
 grow_vertical = 0
 
 [node name="Heal" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
@@ -278,13 +279,20 @@ text = "0"
 label_settings = SubResource("LabelSettings_1utrh")
 vertical_alignment = 1
 
+[node name="MaxTower" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
 [node name="UpgradeLabelsContainer" type="VBoxContainer" parent="Upgrades"]
 layout_mode = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -263.0
+offset_top = -304.0
 offset_right = 146.0
-offset_bottom = 15.0
+offset_bottom = -11.0
 grow_vertical = 0
 theme_override_constants/separation = 13
 
@@ -344,6 +352,13 @@ text = "TOWER ATK SPD"
 label_settings = SubResource("LabelSettings_iwfyd")
 vertical_alignment = 1
 
+[node name="MaxTower" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "MAX TOWER"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
 [node name="UpgradesButtonContainer" type="VBoxContainer" parent="Upgrades"]
 layout_mode = 2
 offset_left = 150.0
@@ -383,6 +398,10 @@ text = "+"
 layout_mode = 2
 text = "+"
 
+[node name="MaxTower" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/Heal" to="." method="_on_heal_button_down"]
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/HealAmount" to="." method="_on_heal_amount_button_down"]
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/MaxHealth" to="." method="_on_max_health_button_down"]
@@ -391,3 +410,4 @@ text = "+"
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerRange" to="." method="_on_tower_range_button_down"]
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerDamage" to="." method="_on_tower_damage_button_down"]
 [connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerAtkSpd" to="." method="_on_tower_atk_spd_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/MaxTower" to="." method="_on_max_tower_button_down"]

@@ -31,3 +31,7 @@ func _on_tower_damage_button_down() -> void:
 
 func _on_tower_atk_spd_button_down() -> void:
 	StatsManager.incrementTowerAtkSpd()
+
+
+func _on_max_tower_button_down() -> void:
+	StatsManager.incrementMaxTowers()

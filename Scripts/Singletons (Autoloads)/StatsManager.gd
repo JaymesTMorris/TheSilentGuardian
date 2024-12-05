@@ -1,5 +1,7 @@
 extends Node
 
+signal attack_speed_updated
+
 # Declare upgradeable stats with their initial values and increment rules
 var HealAmount: float = 10 # +1, max 25
 #MaxHealth from HealthManager.gd +50
@@ -8,6 +10,8 @@ var MaxMana: float = 75 # +20
 var TowerRange: float = 250 # +50
 var TowerDamage: float = 20 # +5
 var TowerAtkSpd: float = 0.5 # -0.025, min 0.1
+var MaxTowers: int = 5 # +1, 10 max
+var TowersPlaced: int = 0
 
 # Functions to increment stats
 func incrementHealAmount() -> void:
@@ -26,13 +30,14 @@ func incrementMaxHealth() -> void:
 		UIManager.updateUpgradesLabels()
 
 func incrementManaRegen() -> void:
+	if ManaRegen >= 0.5:
+		print("ManaRegen is already at the maximum value of 0.5.")
+		return
 	if CurrencyManager.spendCurrency(50):
-		if ManaRegen < 0.5:
-			ManaRegen += 0.025
-			print("ManaRegen incremented to ", ManaRegen)
-		else:
-			print("ManaRegen is already at the maximum value of 0.5.")
+		ManaRegen += 0.025
+		print("ManaRegen incremented to ", ManaRegen)
 		UIManager.updateUpgradesLabels()
+	
 
 func incrementMaxMana() -> void:
 	if CurrencyManager.spendCurrency(50):
@@ -53,14 +58,25 @@ func incrementTowerDamage() -> void:
 		UIManager.updateUpgradesLabels()
 
 func incrementTowerAtkSpd() -> void:
+	if TowerAtkSpd <= 0.1:
+		print("TowerAtkSpd is already at the minimum value of 0.1.")
+		return
 	if CurrencyManager.spendCurrency(50):
-		if TowerAtkSpd > 0.1:
-			TowerAtkSpd -= 0.025
-			print("TowerAtkSpd decreased to ", TowerAtkSpd)
-		else:
-			print("TowerAtkSpd is already at the minimum value of 0.1.")
+		TowerAtkSpd -= 0.025
+		print("TowerAtkSpd decreased to ", TowerAtkSpd)
 		UIManager.updateUpgradesLabels()
+		emit_signal("attack_speed_updated")
 
 func heal() -> void:
 	if CurrencyManager.spendCurrency(50):
 		HealthManager.heal(HealAmount)
+		
+func incrementMaxTowers() -> void:
+	if MaxTowers <= 9:
+		if CurrencyManager.spendCurrency(50):
+			MaxTowers += 1
+			print("Max Towers Increased to ", MaxTowers)
+			UIManager.updateUpgradesLabels()
+	else:
+		print("Max Towers is already at the maximum value of 10.")
+	

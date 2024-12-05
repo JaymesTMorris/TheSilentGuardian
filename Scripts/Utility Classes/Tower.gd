@@ -1,10 +1,16 @@
 extends Node2D
 
-var target: Spirit 
+var target: Spirit
 var shootTimer: Timer = Timer.new()  # Timer to control shooting interval
 
 func _ready() -> void:
-	shootTimerTick()
+	# Add and configure the shooting timer
+	add_child(shootTimer)
+	shootTimer.one_shot = false
+	shootTimer.connect("timeout", Callable(self, "spawnProjectile"))
+	updateShootTimer()  # Set initial shooting interval
+	shootTimer.start()
+	StatsManager.connect("attack_speed_updated", Callable(self, "_on_attack_speed_updated"))
 
 func spawnProjectile() -> void:
 	updateTarget()
@@ -16,13 +22,13 @@ func spawnProjectile() -> void:
 	add_child(projectile)
 	projectile.global_position = global_position  # Start at the tower's position
 
-func shootTimerTick() -> void:
-	# Add and start the shooting timer to spawn a projectile every second
-	add_child(shootTimer)
-	shootTimer.wait_time = StatsManager.TowerAtkSpd  # Shoot every 0.25 seconds
-	shootTimer.one_shot = false
-	shootTimer.connect("timeout", Callable(self, "spawnProjectile"))
-	shootTimer.start()
+func updateShootTimer() -> void:
+	# Update the timer's interval to match the current attack speed
+	if shootTimer != null:
+		shootTimer.wait_time = StatsManager.TowerAtkSpd
+
+func updateTarget() -> void:
+	target = getClosestSpirit()
 
 func getClosestSpirit() -> Node2D:
 	var spawnManager: Node = get_node("/root/SpawnManager")
@@ -39,6 +45,6 @@ func getClosestSpirit() -> Node2D:
 				closestSpirit = child
 	
 	return closestSpirit
-	
-func updateTarget() -> void:
-	target = getClosestSpirit()
+
+func _on_attack_speed_updated() -> void:
+	updateShootTimer()

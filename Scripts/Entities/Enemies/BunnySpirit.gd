@@ -7,8 +7,8 @@ var baseSpd: float = 100
 
 func _ready() -> void:
 	# Initialize Spirit-specific properties
-	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/5)
-	var atk: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/20)
+	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/2)
+	var atk: float = baseAtk*pow(1.1, (SpawnManager.currentWave-1)/10)
 	initialize("BearSpirit", hp, baseSpd, createBearAttack(atk), sprite)
 
 func _process(delta: float) -> void:
