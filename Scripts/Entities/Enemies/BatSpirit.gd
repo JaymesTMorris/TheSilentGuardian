@@ -3,7 +3,7 @@ extends Spirit
 @export var moveDirection: Vector2 = Vector2.RIGHT  # Direction to move (right)
 var baseHP: float = 1000 #Bat's health does not scale
 var baseAtk: float = 100 #This is pre-wave calculation
-var baseSpd: float = 300 #This is pre-wave calculation
+var baseSpd: float = 250 #This is pre-wave calculation
 
 func _ready() -> void:
 	# Initialize Spirit-specific properties

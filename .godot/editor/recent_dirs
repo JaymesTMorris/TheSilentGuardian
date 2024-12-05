@@ -1,3 +1,4 @@
+C:/Users/Jayme/OneDrive/Desktop
 res://Scripts/Entities/Enemies
 res://Sprites/Entities/Enemies/Bat
 res://Scenes/UI
@@ -11,11 +12,8 @@ res://Music&Sounds/Sounds
 res://Fonts/game-paused-demo
 res://Scenes/Levels
 res://Sprites/Environment/Tiles
-<<<<<<< HEAD
 res://
-=======
 res://Sprites/Environment/Outdoor decoration
 res://
->>>>>>> main
 res://Sprites/Entities/Enemies/Bunny
 res://Sprites/Entities/Player
