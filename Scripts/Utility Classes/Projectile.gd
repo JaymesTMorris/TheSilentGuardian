@@ -66,7 +66,7 @@ func startCollisionTimer() -> void:
 
 func createProjectileSprite() -> void:
 	sprite = Sprite2D.new()
-	sprite.texture = preload("res://Sprites/Tower/blue.png")
+	sprite.texture = preload("res://Sprites/Tower/necrobolt1_strip.png")
 	sprite.centered = true
 	sprite.position = Vector2.ZERO
 	add_child(sprite)
