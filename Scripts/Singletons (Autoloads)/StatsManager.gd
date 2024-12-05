@@ -36,11 +36,12 @@ func incrementMaxHealth() -> void:
 func incrementManaRegen() -> void:
 	if ManaRegen >= 0.5:
 		print("ManaRegen is already at the maximum value of 0.5.")
+		isManaRegenMaxed = true
 		return
 	if CurrencyManager.spendCurrency(50):
 		ManaRegen += 0.025
 		print("ManaRegen incremented to ", ManaRegen)
-		if ManaRegen == 0.5:
+		if ManaRegen >= 0.5:
 			isManaRegenMaxed = true
 		UIManager.updateUpgradesLabels()
 	
@@ -66,12 +67,13 @@ func incrementTowerDamage() -> void:
 func incrementTowerAtkSpd() -> void:
 	if TowerAtkSpd <= 0.1:
 		print("TowerAtkSpd is already at the minimum value of 0.1.")
+		isTowerAtkSpdMaxed = true
 		return
 	if CurrencyManager.spendCurrency(50):
 		TowerAtkSpd -= 0.025
 		print("TowerAtkSpd decreased to ", TowerAtkSpd)
 		emit_signal("attack_speed_updated")
-		if TowerAtkSpd == 0.1:
+		if TowerAtkSpd <= 0.1:
 				isTowerAtkSpdMaxed = true
 		UIManager.updateUpgradesLabels()
 

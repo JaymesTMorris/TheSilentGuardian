@@ -8,7 +8,7 @@ func _onStartPressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/UI/Tutorial.tscn")  # Tutorial
 
 func _onContinuePressed() -> void:
-	AudioManager.playMusic("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
+	AudioManager.playSound("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
 	get_tree().change_scene_to_file("res://Scenes/Levels/Level1.tscn")  # Level 1
 
 func _onQuitPressed() -> void:
