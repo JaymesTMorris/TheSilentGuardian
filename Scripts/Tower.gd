@@ -10,6 +10,8 @@ func spawnProjectile() -> void:
 	updateTarget()
 	if target == null: # Don't shoot if there is no target
 		return
+	if position.distance_to(target.position) > 400:
+		return
 	var projectile: Projectile = Projectile.new(target)
 	add_child(projectile)
 	projectile.global_position = global_position  # Start at the tower's position

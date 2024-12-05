@@ -2,7 +2,7 @@ extends Node
 
 # Export variables for flexibility
 @export var nightLength: int = 10
-@export var baseSpawnInterval: float = 2
+@export var baseSpawnInterval: float = 1
 @export var minSpawnInterval: float = 0.1
 @export var spawnXPosition: int = -320
 @export var minYPosition: float = 25
@@ -55,7 +55,7 @@ func _process(delta: float) -> void:
 func spawnEnemy() -> void:
 	# Randomly select enemy type (70% Enemy 1, 30% Enemy 2)
 	var enemyScene: PackedScene 
-	if currentWave <= 3:
+	if currentWave <= 10:
 		enemyScene = bunnyScene
 	else:
 		enemyScene = bunnyScene if randf() <= 0.7 else bearScene

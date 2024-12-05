@@ -1,6 +1,6 @@
 extends Node
 
-@export var maxCurrency: int = 1000
+@export var maxCurrency: int = 999999999
 @export var currentCurrency: int = 0
 @export var totalCurrencyEarned: int = 0
 

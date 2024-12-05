@@ -2,13 +2,13 @@ extends Spirit
 
 @export var moveDirection: Vector2 = Vector2.RIGHT  # Direction to move (right)
 var baseHP: float = 200 #This is pre-wave calculation
-var baseAtk: float = 200 #This is pre-wave calculation
-var baseSpd: float = 50
+var baseAtk: float = 100 #This is pre-wave calculation
+var baseSpd: float = 100
 
 func _ready() -> void:
 	# Initialize Spirit-specific properties
-	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/2)
-	var atk: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/3)
+	var hp: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/5)
+	var atk: float = baseHP*pow(1.1, (SpawnManager.currentWave-1)/20)
 	initialize("BearSpirit", hp, baseSpd, createBearAttack(atk), sprite)
 
 func _process(delta: float) -> void:
