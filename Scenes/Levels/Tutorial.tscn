@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://c7e44cdaprnba"]
+[gd_scene load_steps=35 format=4 uid="uid://c7e44cdaprnba"]
 
 [ext_resource type="Script" path="res://Scripts/Menu Scripts/main_menu.gd" id="1_wuvd5"]
 [ext_resource type="Texture2D" uid="uid://dpx7l7w4racro" path="res://Sprites/Environment/Tiles/Grass_Middle.png" id="2_437mh"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bxff7urf5po0p" path="res://Sprites/Environment/Outdoor decoration/Oak_Tree_Small.png" id="6_thduf"]
 [ext_resource type="Texture2D" uid="uid://c603de7wv2ngn" path="res://Sprites/Environment/Outdoor decoration/Outdoor_Decor_Free.png" id="7_y5r0h"]
 [ext_resource type="Texture2D" uid="uid://c5xt41tmpn2e3" path="res://Sprites/Environment/Tiles/Path_Middle.png" id="8_8abyp"]
+[ext_resource type="Texture2D" uid="uid://v1jvynmcmk2d" path="res://Sprites/Tower/Crystal.png" id="8_pf2cf"]
 [ext_resource type="Texture2D" uid="uid://clidwd8tbuy0n" path="res://Sprites/Environment/Tiles/Path_Tile.png" id="9_p6ayi"]
 [ext_resource type="Texture2D" uid="uid://ci10hvvbyny11" path="res://Sprites/Environment/Tiles/Water_Middle.png" id="10_6ev36"]
 [ext_resource type="Texture2D" uid="uid://bikhum55kifdt" path="res://Sprites/Environment/Tiles/Water_Tile.png" id="11_8dbuv"]
@@ -146,6 +147,95 @@ texture = ExtResource("7_y5r0h")
 2:11/0 = 0
 3:11/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pg7ir"]
+texture = ExtResource("8_pf2cf")
+3:1/0 = 0
+4:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+35:1/0 = 0
+36:1/0 = 0
+43:1/0 = 0
+44:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+35:2/0 = 0
+36:2/0 = 0
+43:2/0 = 0
+44:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+26:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+34:3/0 = 0
+35:3/0 = 0
+36:3/0 = 0
+37:3/0 = 0
+42:3/0 = 0
+43:3/0 = 0
+44:3/0 = 0
+45:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+34:4/0 = 0
+35:4/0 = 0
+36:4/0 = 0
+37:4/0 = 0
+42:4/0 = 0
+43:4/0 = 0
+44:4/0 = 0
+45:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+35:5/0 = 0
+36:5/0 = 0
+43:5/0 = 0
+44:5/0 = 0
+13:1/0 = 0
+13:2/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4gmpd"]
 texture = ExtResource("3_7micg")
 0:0/0 = 0
@@ -276,6 +366,7 @@ sources/8 = SubResource("TileSetAtlasSource_qoa7i")
 sources/9 = SubResource("TileSetAtlasSource_g7uhw")
 sources/10 = SubResource("TileSetAtlasSource_4flxx")
 sources/11 = SubResource("TileSetAtlasSource_mwlo2")
+sources/12 = SubResource("TileSetAtlasSource_pg7ir")
 
 [sub_resource type="LabelSettings" id="LabelSettings_4hci6"]
 font = ExtResource("14_ysp0p")
@@ -305,16 +396,13 @@ tile_map_data = PackedByteArray("AAAFACMABwAAAAAAAAAFACQABwAAAAEAAAAFACUABwAAAAI
 tile_set = SubResource("TileSet_6gslh")
 
 [node name="GrayBackground" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1050, 600)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -513.0
-offset_top = -275.5
-offset_right = 513.0
-offset_bottom = 275.5
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.137255, 0.137255, 0.137255, 0.658824)
@@ -336,12 +424,50 @@ offset_bottom = 174.0
 grow_horizontal = 2
 
 [node name="Tittle" type="Label" parent="CenterContainer2"]
+custom_minimum_size = Vector2(500, 100)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("14_ysp0p")
+theme_override_font_sizes/font_size = 45
 text = "How to play"
 label_settings = SubResource("LabelSettings_4hci6")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer2/Tittle"]
+layout_mode = 0
+offset_left = -230.0
+offset_top = 119.0
+offset_right = 776.0
+offset_bottom = 467.0
+theme_override_font_sizes/normal_font_size = 25
+text = "•Hover over a plot on the screen and press E to place a tower.
+•Don’t let the bad spirits reach the village’s fence!
+		•	If they do, you’ll lose health.
+		•	Run out of health, and it’s GAME OVER!
+
+•Your mission: Protect the village from the bad spirits at all costs!
+
+Press ESC to quit the game.
+Good luck and enjoy!"
+fit_content = true
+
+[node name="Label" type="Label" parent="CenterContainer2/Tittle"]
+visible = false
+layout_mode = 0
+offset_left = -275.0
+offset_top = 126.0
+offset_right = 775.0
+offset_bottom = 450.0
+theme_override_font_sizes/font_size = 25
+text = "		Hover over a plot on the screen and press E to place a tower.
+Don’t let the bad spirits reach the village’s fence!
+		If they do, you’ll lose health.
+		Run out of health, and it’s GAME OVER!
+
+Your mission: Protect the village from the bad spirits at all costs!
+Press ESC to quit the game.
+
+Good luck and enjoy!"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(477, 301)
