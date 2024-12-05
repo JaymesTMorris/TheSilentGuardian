@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dirnmu86rb8re"]
+[gd_scene load_steps=10 format=3 uid="uid://dirnmu86rb8re"]
 
 [ext_resource type="FontFile" uid="uid://dy4hr1uf6lccv" path="res://Fonts/vinque/vinque rg.otf" id="1_l3es4"]
 
@@ -24,6 +24,13 @@ bg_color = Color(0.263775, 0.407869, 1, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_v3ccd"]
 font = ExtResource("1_l3es4")
 font_size = 28
+
+[sub_resource type="LabelSettings" id="LabelSettings_1utrh"]
+font = ExtResource("1_l3es4")
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_iwfyd"]
+font = ExtResource("1_l3es4")
 
 [node name="UserInterface" type="Control"]
 layout_mode = 3
@@ -192,3 +199,184 @@ text = "Wave: 1"
 label_settings = SubResource("LabelSettings_v3ccd")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Upgrades" type="ColorRect" parent="."]
+layout_mode = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 777.0
+offset_top = -305.0
+offset_right = 1069.0
+offset_bottom = -27.0
+grow_vertical = 0
+color = Color(0, 0, 0, 0.254902)
+
+[node name="UpgradeDetailsContainer" type="VBoxContainer" parent="Upgrades"]
+layout_mode = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 189.0
+offset_top = -268.0
+offset_right = 288.0
+grow_vertical = 0
+
+[node name="Heal" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="HealAmount" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="MaxHealth" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="ManaRegen" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="MaxMana" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="TowerRange" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="TowerDamage" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="TowerAtkSpd" type="Label" parent="Upgrades/UpgradeDetailsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "0"
+label_settings = SubResource("LabelSettings_1utrh")
+vertical_alignment = 1
+
+[node name="UpgradeLabelsContainer" type="VBoxContainer" parent="Upgrades"]
+layout_mode = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -263.0
+offset_right = 146.0
+offset_bottom = 15.0
+grow_vertical = 0
+theme_override_constants/separation = 13
+
+[node name="Heal" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "HEAL"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="HealAmount" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "HEAL AMOUNT"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="MaxHealth" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "MAX HEALTH"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="ManaRegen" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "MANA REGEN"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="MaxMana" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "MAX MANA"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="TowerRange" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "TOWER RANGE"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="TowerDamage" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "TOWER DAMGE"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="TowerAtkSpd" type="Label" parent="Upgrades/UpgradeLabelsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l3es4")
+text = "TOWER ATK SPD"
+label_settings = SubResource("LabelSettings_iwfyd")
+vertical_alignment = 1
+
+[node name="UpgradesButtonContainer" type="VBoxContainer" parent="Upgrades"]
+layout_mode = 2
+offset_left = 150.0
+offset_top = 2.0
+offset_right = 184.0
+offset_bottom = 278.0
+
+[node name="Heal" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="HealAmount" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="MaxHealth" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="ManaRegen" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="MaxMana" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="TowerRange" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="TowerDamage" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="TowerAtkSpd" type="Button" parent="Upgrades/UpgradesButtonContainer"]
+layout_mode = 2
+text = "+"
