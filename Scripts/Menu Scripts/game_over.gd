@@ -14,6 +14,15 @@ func showStats() -> void:
 func getStatsLabel() -> Label:
 	return get_node("/root/GameOver/StatsBox")
 	
-func _on_quit_pressed():
-	AudioManager.playSound("res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav")
+func _on_quit_pressed() -> void:
+	var sound_path = "res://Music&Sounds/Sounds/506052__mellau__button-click-3.wav"
+	AudioManager.playSound(sound_path)
+	
+	# Get the AudioStreamPlayer responsible for playing the sound
+	var sound_player = AudioManager.soundPlayer
+	if sound_player and sound_player.stream == load(sound_path):
+		# Wait for the sound to finish playing
+		await get_tree().create_timer(0.25).timeout
+
+	# Quit the game after the sound has finished
 	get_tree().quit()
