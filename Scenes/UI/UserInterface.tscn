@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dirnmu86rb8re"]
+[gd_scene load_steps=11 format=3 uid="uid://dirnmu86rb8re"]
 
 [ext_resource type="FontFile" uid="uid://dy4hr1uf6lccv" path="res://Fonts/vinque/vinque rg.otf" id="1_l3es4"]
+[ext_resource type="Script" path="res://Scenes/UI/user_interface.gd" id="1_m2dnj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c8yax"]
 
@@ -39,6 +40,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_m2dnj")
 
 [node name="HealthBar" type="ProgressBar" parent="."]
 z_index = 1
@@ -380,3 +382,12 @@ text = "+"
 [node name="TowerAtkSpd" type="Button" parent="Upgrades/UpgradesButtonContainer"]
 layout_mode = 2
 text = "+"
+
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/Heal" to="." method="_on_heal_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/HealAmount" to="." method="_on_heal_amount_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/MaxHealth" to="." method="_on_max_health_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/ManaRegen" to="." method="_on_mana_regen_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/MaxMana" to="." method="_on_max_mana_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerRange" to="." method="_on_tower_range_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerDamage" to="." method="_on_tower_damage_button_down"]
+[connection signal="button_down" from="Upgrades/UpgradesButtonContainer/TowerAtkSpd" to="." method="_on_tower_atk_spd_button_down"]

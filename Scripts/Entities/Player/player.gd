@@ -60,3 +60,4 @@ func _ready() -> void:
 	
 	# Start the first wave
 	SpawnManager.startNight()
+	

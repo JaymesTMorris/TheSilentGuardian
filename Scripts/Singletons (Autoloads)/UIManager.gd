@@ -118,10 +118,10 @@ func updateWaveLabel() -> void:
 
 func updateUpgradesLabels() -> void:
 	Heal.text = ""
-	HealAmount.text = ""
-	MaxHealth.text = ""
-	ManaRegen.text = ""
-	MaxMana.text = ""
-	TowerRange.text = ""
-	TowerDamage.text = ""
-	TowerAtkSpd.text = ""
+	HealAmount.text = str(StatsManager.HealAmount)+"%"
+	MaxHealth.text = str(HealthManager.maxHealth)
+	ManaRegen.text = str(StatsManager.ManaRegen)+" per 0.1s"
+	MaxMana.text = str(StatsManager.MaxMana)
+	TowerRange.text = str(StatsManager.TowerRange)
+	TowerDamage.text = str(StatsManager.TowerDamage)
+	TowerAtkSpd.text = str(StatsManager.TowerAtkSpd)+"s to reload"

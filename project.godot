@@ -26,6 +26,7 @@ ScoreManager="*res://Scripts/Singletons (Autoloads)/ScoreManager.gd"
 SpawnManager="*res://Scripts/Singletons (Autoloads)/SpawnManager.gd"
 UIManager="*res://Scripts/Singletons (Autoloads)/UIManager.gd"
 HealthManager="*res://Scripts/Singletons (Autoloads)/HealthManager.gd"
+StatsManager="*res://Scripts/Singletons (Autoloads)/StatsManager.gd"
 
 [debug]
 

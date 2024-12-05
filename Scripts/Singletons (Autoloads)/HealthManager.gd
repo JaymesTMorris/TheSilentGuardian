@@ -18,6 +18,15 @@ func takeDamage(amount: int) -> void:
 		incrementDamageTaken(amount)
 		currentHealth -= amount
 		UIManager.updateHealthBar(currentHealth)
+		
+func heal(percentage: int) -> void: # heals percentage of max health
+	var healAmount: int = int((percentage / 100.0) * maxHealth)
+	if currentHealth + healAmount >= maxHealth:
+		currentHealth = maxHealth
+		UIManager.updateHealthBar(currentHealth)
+	else:
+		currentHealth += healAmount
+		UIManager.updateHealthBar(currentHealth)
 
 
 func incrementDamageTaken(amount: int) -> void:

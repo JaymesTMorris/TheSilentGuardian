@@ -1,8 +1,6 @@
 extends Node
 
-@export var maxEnergy: float = 100
 @export var currentEnergy: float = 100
-@export var rechargeRate: float = 0.1
 @export var energyUsed: float = 0
 @export var energyCollected: float = 0
 
@@ -25,7 +23,7 @@ func useEnergy(amount: int) -> bool:
 	return false
 
 func replenishEnergy(amount: float) -> void:
-	currentEnergy = minf(currentEnergy + amount, maxEnergy)
+	currentEnergy = minf(currentEnergy + amount, StatsManager.MaxMana)
 	UIManager.updateManaBar(currentEnergy)  # Update the mana bar
 
 func incrementEnergyUsed(amount: int) -> void:
@@ -36,4 +34,4 @@ func incrementEnergyCollected(amount: int) -> void:
 
 # Called when the timer times out
 func _on_energy_timer_timeout() -> void:
-	replenishEnergy(rechargeRate)
+	replenishEnergy(StatsManager.ManaRegen)

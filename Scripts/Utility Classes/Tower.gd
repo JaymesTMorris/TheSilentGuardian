@@ -10,7 +10,7 @@ func spawnProjectile() -> void:
 	updateTarget()
 	if target == null: # Don't shoot if there is no target
 		return
-	if position.distance_to(target.position) > 400:
+	if position.distance_to(target.position) > StatsManager.TowerRange:
 		return
 	var projectile: Projectile = Projectile.new(target)
 	add_child(projectile)
@@ -19,7 +19,7 @@ func spawnProjectile() -> void:
 func shootTimerTick() -> void:
 	# Add and start the shooting timer to spawn a projectile every second
 	add_child(shootTimer)
-	shootTimer.wait_time = 0.25  # Shoot every 0.25 seconds
+	shootTimer.wait_time = StatsManager.TowerAtkSpd  # Shoot every 0.25 seconds
 	shootTimer.one_shot = false
 	shootTimer.connect("timeout", Callable(self, "spawnProjectile"))
 	shootTimer.start()

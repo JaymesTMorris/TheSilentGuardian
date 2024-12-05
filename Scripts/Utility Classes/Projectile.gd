@@ -3,7 +3,7 @@ extends Node2D
 
 class_name Projectile
 
-@export var damage: int = 10
+
 var speed: float  # Dynamically calculated to reach the target in allotted second
 var target: Spirit
 var collisionTimer: Timer = Timer.new()
@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 # Hits the target or deletes itself if no vaild target
 func hitTargetOrDelete() -> void:
 	if target and is_instance_valid(target):
-		target.takeDamage(damage)
+		target.takeDamage(StatsManager.TowerDamage)
 		queue_free()
 	else:
 		queue_free()
