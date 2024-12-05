@@ -9,8 +9,19 @@ var ScoreTextLabel: RichTextLabel
 var NightProgressBar: ProgressBar
 var CurrencyTextLabel: RichTextLabel
 var WaveLabel: Label
-	
+
+# New UI elements
+var Heal: Label
+var HealAmount: Label
+var MaxHealth: Label
+var ManaRegen: Label
+var MaxMana: Label
+var TowerRange: Label
+var TowerDamage: Label
+var TowerAtkSpd: Label
+
 func initializeUIElements() -> void:
+	# Initialize core UI elements
 	HealthBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/HealthBar") as ProgressBar
 	HealthDelayBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/HealthBar/DelayBar") as ProgressBar
 	ManaBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/ManaBar") as ProgressBar
@@ -19,6 +30,17 @@ func initializeUIElements() -> void:
 	NightProgressBar = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/NightProgressBar") as ProgressBar
 	CurrencyTextLabel = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/CurrencyRect/CurrencyTextLabel") as RichTextLabel
 	WaveLabel = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/WaveLabel") as Label
+	
+	# Initialize new UpgradeDetailsContainer UI elements
+	Heal = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/Heal") as Label
+	HealAmount = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/HealAmount") as Label
+	MaxHealth = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/MaxHealth") as Label
+	ManaRegen = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/ManaRegen") as Label
+	MaxMana = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/MaxMana") as Label
+	TowerRange = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerRange") as Label
+	TowerDamage = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerDamage") as Label
+	TowerAtkSpd = get_node_or_null("/root/Main/Player/CanvasLayer/UserInterface/Upgrades/UpgradeDetailsContainer/TowerAtkSpd") as Label
+	
 	logMissingUIElements()
 
 func logMissingUIElements() -> void:
@@ -30,10 +52,17 @@ func logMissingUIElements() -> void:
 	if ScoreTextLabel == null: print("ScoreTextLabel is missing!")
 	if NightProgressBar == null: print("NightProgressBar is missing!")
 	if CurrencyTextLabel == null: print("CurrencyTextLabel is missing!")
-	if WaveLabel == null: print("CurrencyTextLabel is missing!")
+	if WaveLabel == null: print("WaveLabel is missing!")
+	if Heal == null: print("Heal is missing!")
+	if HealAmount == null: print("HealAmount is missing!")
+	if MaxHealth == null: print("MaxHealth is missing!")
+	if ManaRegen == null: print("ManaRegen is missing!")
+	if MaxMana == null: print("MaxMana is missing!")
+	if TowerRange == null: print("TowerRange is missing!")
+	if TowerDamage == null: print("TowerDamage is missing!")
+	if TowerAtkSpd == null: print("TowerAtkSpd is missing!")
 
 func updateHealthBar(value: float) -> void:
-	# Validate health bar elements
 	if HealthBar == null or HealthDelayBar == null:
 		print("Cannot update health bar: Missing elements.")
 		return
@@ -42,7 +71,6 @@ func updateHealthBar(value: float) -> void:
 	HealthBar.value = value
 	
 	while HealthDelayBar.value > HealthBar.value:
-		# Re-check validity inside the loop
 		if HealthBar == null or HealthDelayBar == null:
 			print("HealthBar or HealthDelayBar became null!")
 			return
@@ -50,7 +78,6 @@ func updateHealthBar(value: float) -> void:
 		await get_tree().create_timer(0.01).timeout
 
 func updateManaBar(value: float) -> void:
-	# Validate mana bar elements
 	if ManaBar == null or ManaDelayBar == null:
 		print("Cannot update mana bar: Missing elements.")
 		return
@@ -59,7 +86,6 @@ func updateManaBar(value: float) -> void:
 	ManaBar.value = value
 	
 	while ManaDelayBar.value > ManaBar.value:
-		# Re-check validity inside the loop
 		if ManaBar == null or ManaDelayBar == null:
 			print("ManaBar or ManaDelayBar became null!")
 			return
@@ -83,11 +109,19 @@ func updateNightProgressBar(value: float) -> void:
 		print("Cannot update NightProgressBar: Missing element.")
 		return
 	NightProgressBar.value = SpawnManager.timeLeft() / float(SpawnManager.nightLength) * 100.0
-	
+
 func updateWaveLabel() -> void:
-	# Validate health bar elements
 	if WaveLabel == null:
-		print("Cannot update health bar: Missing elements.")
-		return
+		print("Cannot update WaveLabel: Missing element.")
+		return 
 	WaveLabel.text = "Wave: " + str(SpawnManager.currentWave)
-		
+
+func updateUpgradesLabels() -> void:
+	Heal.text = ""
+	HealAmount.text = ""
+	MaxHealth.text = ""
+	ManaRegen.text = ""
+	MaxMana.text = ""
+	TowerRange.text = ""
+	TowerDamage.text = ""
+	TowerAtkSpd.text = ""
