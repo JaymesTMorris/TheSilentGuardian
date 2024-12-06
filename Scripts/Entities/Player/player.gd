@@ -1,7 +1,15 @@
 extends CharacterBody2D
 
 @onready var playerCamera: Camera2D = $Camera2D
-@onready var globalCamera: Camera2D = get_node("/root/Main/Camera2D")
+@onready var globalCamera: Camera2D = find_camera()
+
+func find_camera() -> Camera2D:
+	var camera = get_node_or_null("/root/Main/Camera2D")
+	if camera == null:
+		camera = get_node_or_null("/root/Playground/Camera2D")
+	if camera == null:
+		print("Camera2D not found in either path!")
+	return camera
 
 var usingPlayerCamera: bool
 const SPEED: float = 200.0
