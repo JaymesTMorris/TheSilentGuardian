@@ -136,7 +136,7 @@ Unsung, but never unimportant.
 
 ## 📥 Installation
 
-1. Download the latest PC build from the [releases page](#) *(or itch.io if you upload there)*  
+1. Download the latest PC build from the itch.io page: [The Silent Guardian](https://sagaciouspangolin.itch.io/the-silent-guardian) *(or itch.io if you upload there)*  
 2. Unzip the archive  
 3. Run `TheSilentGuardian.exe`
 
